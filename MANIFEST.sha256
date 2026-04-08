@@ -1,0 +1,24 @@
+# SHA-256 DEPLOYMENT MANIFEST
+# Project: Josh Williams 'Hammer Hands' Boxing Website
+# Generated: 2026-04-08T07:32:06Z
+# Responsible Person: Architect (Sovereign Deploy)
+# Repository: https://github.com/PrecisePointway/josh-williams-boxing
+# Google Drive: josh-williams-boxing/
+# ---
+ac30b10391c8b17ee74045fcf2695226f61251c15736fa3de0bfc123ac797904  ./IMAGE_MAP.md
+1c8539a771fec50360182e59af1a60474d5bc0209f0fd6435a3c2672f7868094  ./images/fight-action-1.jpg
+a371b0d28e3b39e46764a6d9c3b0cf03bff540161c427a750658e3ffa4f484db  ./images/fight-action-2.jpg
+76784628cf2d6fa4ee1ef3e4ca73e7240837d9660c792bdc03009cf86130fac8  ./images/fight-action-3.jpg
+49a03d943b60e6335ba4f8d7c6dd934157c6a33d30d4be9b07e3a8437cbb2fb3  ./images/hero-walkout.jpg
+84dbee10533354639b0a0fc2c0147d40de92d299c46240a7f33720bb6995fb24  ./images/ring-celebration.jpg
+9dab14cf5b9e35f0e3108ec87770922a1eeec225a11028bdea4a30c773437c77  ./images/victory-pose.jpg
+3c1c08278acc7ee2ce367e1d31914e755a3dafa656078cc4cb60d76a996b8388  ./images/weigh-in.jpg
+a283ab4ffe9dc0b586d530eed92f42a5c5da83a27f5ee2d45065b59082d39b9c  ./index.html
+40d52c02fb598385378da3f1b2448288cb1c439312c1d2983098471378f6641e  ./jw_boxing.html
+c8aaef34b33c83dbeb0609065ccde4dbc3bf69cce3d1659863f56c3bdec5a9c8  ./jw_elite.html
+6ccb87b2a0db47118d46794c216f7438ec4eb70e3f418b020e4f7a1d8f73b0d4  ./jw_fitness.html
+339cdf7b8b86a62a3e4ec3c58b6b36ad93463a3af890802558b1a76917de440b  ./robots.txt
+d4c06f74a3bb07657fbfe7ffc473941e0f0997bc1b18b7a919844131660e2f30  ./sitemap.xml
+
+# MASTER HASH (integrity seal)
+# Master: f13b21bb6d80b8e8cdf7b6c5e1cd07a8d213ea12a0b96598941c31f06b92afa9
