@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hammer Hands — Josh Williams Boxing & Coaching</title>
+<meta name="description" content="Boxing coaching by Josh Williams, professional fighter from the Rhondda Valleys. Box Fit classes, Fight Ready programmes, and Elite 1-on-1 fight camp. Tough times to the top.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://joshwilliamsboxing.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://joshwilliamsboxing.com/">
+<meta property="og:title" content="Hammer Hands — Josh Williams Boxing & Coaching">
+<meta property="og:description" content="Boxing coaching by Josh Williams, professional fighter from the Rhondda Valleys. Box Fit, Fight Ready, and Elite fight camp programmes.">
+<meta property="og:image" content="https://joshwilliamsboxing.com/images/og-card.jpg">
+<meta property="og:site_name" content="Hammer Hands">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hammer Hands — Josh Williams Boxing & Coaching">
+<meta name="twitter:description" content="Boxing coaching by Josh Williams, professional fighter from the Rhondda Valleys. Tough times to the top.">
+<meta name="twitter:image" content="https://joshwilliamsboxing.com/images/og-card.jpg">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsActivityLocation",
+      "@id": "https://joshwilliamsboxing.com/#business",
+      "name": "Hammer Hands — Josh Williams Boxing",
+      "alternateName": "Hammer Hands",
+      "description": "Boxing coaching and fight camp training by professional boxer Josh Williams. Based in the Rhondda Valleys, South Wales.",
+      "url": "https://joshwilliamsboxing.com",
+      "image": "https://joshwilliamsboxing.com/images/hero-walkout.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tylorstown",
+        "addressRegion": "Rhondda, Wales",
+        "addressCountry": "GB"
+      },
+      "priceRange": "£47 - £197"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://joshwilliamsboxing.com/#website",
+      "url": "https://joshwilliamsboxing.com",
+      "name": "Hammer Hands",
+      "publisher": { "@id": "https://joshwilliamsboxing.com/#business" }
+    }
+  ]
+}
+</script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥊</text></svg>">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#080808;--dark:#101010;--card:#161616;--border:#202020;
+  --crimson:#C44536;--crimson-dim:rgba(196,69,54,0.10);--crimson-mid:rgba(196,69,54,0.28);
+  --crimson-glow:rgba(196,69,54,0.06);--crimson-hover:#D85A4A;
+  --white:#F0EBE0;--grey:#666;--mid:#999;--light:#bbb;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;line-height:1.6;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:18px 48px;background:rgba(8,8,8,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo span{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:5px;color:var(--crimson)}
+.nav-cta{background:var(--crimson);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:10px 22px;border:none;cursor:pointer;text-decoration:none;transition:all .18s}
+.nav-cta:hover{background:var(--crimson-hover)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:110px 48px 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 60% 40%,var(--crimson-glow) 0%,transparent 65%);pointer-events:none}
+.hero::after{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:url('images/hero-walkout.jpg') center/cover no-repeat;opacity:.15;pointer-events:none;mask-image:linear-gradient(to left,rgba(0,0,0,.6),transparent 85%)}
+
+.pre-headline{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:4px;color:var(--crimson);text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;animation:up .5s ease both .05s}
+.pre-headline::before{content:'';width:28px;height:1px;background:var(--crimson)}
+
+h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(60px,9vw,130px);line-height:.9;letter-spacing:1px;max-width:900px;animation:up .55s ease both .15s}
+h1 .red{color:var(--crimson)}
+
+.what-is-this{font-size:clamp(18px,2.2vw,24px);font-weight:300;color:var(--light);max-width:620px;margin:36px 0 48px;line-height:1.75;animation:up .5s ease both .28s}
+.what-is-this strong{color:var(--white);font-weight:500}
+
+.hero-ctas{display:flex;flex-direction:column;gap:12px;animation:up .5s ease both .4s;width:100%;max-width:560px}
+.hero-cta-label{font-size:13px;color:var(--grey);margin-bottom:4px;letter-spacing:.5px}
+
+/* SPLIT CHOICE */
+.split{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;width:100%;max-width:680px}
+.split-btn{display:flex;flex-direction:column;align-items:flex-start;padding:22px 24px;background:var(--card);border:1px solid var(--border);text-decoration:none;transition:all .2s;cursor:pointer;position:relative}
+.split-btn:hover{border-color:var(--crimson-mid);background:var(--crimson-glow);transform:translateY(-2px)}
+.split-btn.elite{border-color:var(--crimson-mid)}
+.split-btn.elite::before{content:'FIGHT CAMP';position:absolute;top:-1px;left:0;right:0;height:2px;background:var(--crimson)}
+.sb-icon{font-size:22px;margin-bottom:10px;line-height:1}
+.sb-title{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;letter-spacing:1px;color:var(--white);text-transform:uppercase;margin-bottom:4px}
+.sb-desc{font-size:12px;color:var(--grey);line-height:1.5}
+.sb-price{font-size:12px;color:var(--crimson);margin-top:8px;font-weight:600}
+.sb-arrow{position:absolute;bottom:18px;right:18px;font-size:14px;color:var(--crimson);opacity:.6;transition:opacity .2s}
+.split-btn:hover .sb-arrow{opacity:1}
+
+/* REASSURANCE */
+.reassure{display:flex;gap:28px;margin-top:24px;flex-wrap:wrap;animation:up .5s ease both .5s}
+.ra{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--grey)}
+.ra::before{content:'✓';color:var(--crimson);font-size:11px;font-weight:700}
+
+/* HOW SECTION */
+.how{padding:96px 48px;background:var(--dark);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.how-inner{max-width:1100px;margin:0 auto}
+.section-tag{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:4px;color:var(--crimson);text-transform:uppercase;margin-bottom:14px}
+h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,60px);letter-spacing:1px;line-height:1;color:var(--white);margin-bottom:12px}
+.h2-sub{font-size:17px;font-weight:300;color:var(--mid);max-width:540px;line-height:1.75;margin-bottom:56px}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.step{padding:36px 24px;background:var(--card);border:1px solid var(--border);position:relative}
+.step-n{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--crimson-dim);line-height:1;margin-bottom:16px}
+.step-title{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;color:var(--crimson);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.step p{font-size:14px;color:var(--mid);line-height:1.75}
+.step-plain{margin-top:12px;padding:12px 14px;background:var(--crimson-glow);border-left:2px solid var(--crimson-mid)}
+.step-plain p{font-size:12px;color:var(--light);font-style:italic;line-height:1.65}
+
+/* WHAT YOU GET */
+.get{padding:96px 48px;max-width:1100px;margin:0 auto}
+.get-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:52px}
+.get-card{padding:32px 24px;background:var(--card);border:1px solid var(--border);transition:border-color .2s}
+.get-card:hover{border-color:var(--crimson-mid)}
+.get-icon{font-size:28px;margin-bottom:16px;line-height:1}
+.get-title{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.get-card p{font-size:13px;color:var(--mid);line-height:1.75}
+.get-plain{margin-top:12px;font-size:13px;color:var(--light);font-style:italic}
+
+/* JOSH BIO */
+.josh{padding:96px 48px;background:var(--dark);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.josh-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:280px 1fr;gap:72px;align-items:center}
+.josh-photo{width:100%;aspect-ratio:4/5;background:var(--card);border:1px solid var(--border);position:relative;overflow:hidden;display:flex;align-items:flex-end}
+.josh-photo::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,8,.9) 0%,transparent 55%)}
+.josh-initials{font-family:'Bebas Neue',sans-serif;font-size:100px;color:rgba(196,69,54,.08);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);letter-spacing:4px}
+.josh-lbl{position:relative;z-index:2;padding:16px 18px}
+.jn{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;color:var(--white)}
+.jr{font-size:10px;color:var(--crimson);letter-spacing:2px;font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;margin-top:3px}
+.jbar{position:absolute;top:18px;left:-3px;width:3px;height:44px;background:var(--crimson)}
+
+.josh-content h2{margin-bottom:6px}
+.josh-content .h2-sub{margin-bottom:28px}
+.josh-content p{font-size:15px;font-weight:300;color:var(--light);line-height:1.9;margin-bottom:16px}
+.josh-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:32px}
+.jf{background:var(--card);border:1px solid var(--border);padding:20px;text-align:center}
+.jf-n{font-family:'Bebas Neue',sans-serif;font-size:36px;color:var(--crimson);line-height:1;margin-bottom:4px}
+.jf-l{font-size:11px;color:var(--grey);letter-spacing:.5px;line-height:1.4}
+
+/* CAUSES */
+.causes{padding:96px 48px;max-width:1100px;margin:0 auto}
+.causes-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:48px}
+.cause-card{padding:32px 28px;background:var(--card);border:1px solid var(--border);transition:border-color .2s}
+.cause-card:hover{border-color:var(--crimson-mid)}
+.cause-icon{font-size:32px;margin-bottom:14px}
+.cause-name{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.cause-card p{font-size:13px;color:var(--mid);line-height:1.75}
+
+/* WHO THIS IS FOR */
+.who{padding:96px 48px;max-width:1100px;margin:0 auto}
+.who-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:52px}
+.who-card{padding:32px 28px;border:1px solid var(--border);background:var(--card)}
+.who-card.yes-card{border-color:rgba(196,69,54,.25)}
+.who-heading{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.who-card.yes-card .who-heading{color:var(--crimson)}
+.who-card.no-card .who-heading{color:var(--grey)}
+.who-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.who-list li{font-size:14px;color:var(--light);padding-left:22px;position:relative;line-height:1.55}
+.yes-card .who-list li::before{content:'✓';position:absolute;left:0;color:var(--crimson);font-weight:700;font-size:12px}
+.no-card .who-list li::before{content:'✗';position:absolute;left:0;color:#5a3535;font-size:12px}
+
+/* PRICING */
+.pricing{padding:96px 48px;max-width:1100px;margin:0 auto}
+.price-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin-top:52px}
+.pc{background:var(--card);border:1px solid var(--border);padding:36px 28px;position:relative;transition:border-color .2s}
+.pc:hover{border-color:var(--crimson-mid)}
+.pc.featured{border-color:var(--crimson-mid)}
+.pc.featured::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--crimson)}
+.pc-badge{position:absolute;top:12px;right:16px;background:var(--crimson);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px}
+.pc-who{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:3px;color:var(--crimson);text-transform:uppercase;margin-bottom:16px}
+.pc-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;color:var(--white);margin-bottom:4px}
+.pc-tagline{font-size:13px;color:var(--grey);margin-bottom:24px;line-height:1.5}
+.pc-price{font-family:'Bebas Neue',sans-serif;font-size:60px;color:var(--white);line-height:1;margin-bottom:4px}
+.pc-price span{font-size:24px;vertical-align:super;color:var(--crimson)}
+.pc-per{font-size:12px;color:var(--grey);margin-bottom:24px}
+.pc-includes{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:28px;padding-top:20px;border-top:1px solid var(--border)}
+.pc-includes li{font-size:13px;color:var(--light);padding-left:18px;position:relative;line-height:1.5}
+.pc-includes li::before{content:'';position:absolute;left:0;top:7px;width:5px;height:5px;background:var(--crimson)}
+.pc-btn{width:100%;background:var(--crimson);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;padding:15px;border:none;cursor:pointer;text-decoration:none;display:block;text-align:center;transition:background .18s}
+.pc-btn:hover{background:var(--crimson-hover)}
+.pc-btn.ghost{background:transparent;border:1px solid var(--border);color:var(--mid)}
+.pc-btn.ghost:hover{border-color:var(--crimson-mid);color:var(--crimson);background:transparent}
+.pc-fn{font-size:11px;color:var(--grey);text-align:center;margin-top:10px}
+
+/* FINAL CTA */
+.final{padding:100px 48px;text-align:center;background:var(--dark);border-top:1px solid var(--border);overflow:hidden;position:relative}
+.final::before{content:'HH';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Bebas Neue',sans-serif;font-size:360px;color:rgba(196,69,54,.03);pointer-events:none;letter-spacing:10px}
+.final h2{margin:0 auto 14px}
+.final p{font-size:17px;font-weight:300;color:var(--grey);max-width:480px;margin:0 auto 40px;line-height:1.8}
+
+.btn{background:var(--crimson);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:17px 38px;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:all .18s}
+.btn:hover{background:var(--crimson-hover);transform:translateY(-2px);box-shadow:0 6px 28px rgba(196,69,54,.25)}
+
+/* FOOTER */
+footer{padding:28px 48px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+footer .logo{font-size:16px}
+.foot-links{display:flex;gap:20px}
+.foot-links a{font-size:12px;color:var(--grey);text-decoration:none;transition:color .15s}
+.foot-links a:hover{color:var(--crimson)}
+footer p{font-size:11px;color:var(--grey)}
+
+/* ANIM */
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+/* RESPONSIVE */
+@media(max-width:880px){
+  nav{padding:14px 20px}
+  .hero{padding:100px 20px 60px}
+  h1{font-size:58px}
+  .what-is-this{font-size:17px}
+  .split{grid-template-columns:1fr}
+  .how,.josh,.pricing,.final{padding:64px 20px}
+  .get,.who,.causes,.pricing{padding:64px 20px}
+  .steps{grid-template-columns:1fr 1fr}
+  .get-grid,.who-grid,.price-cards,.causes-grid{grid-template-columns:1fr}
+  .josh-inner,.josh-facts,.jf{grid-template-columns:1fr}
+  .josh-inner{gap:36px}
+  footer{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link" style="position:absolute;top:-40px;left:0;background:var(--crimson);color:#fff;padding:8px 16px;z-index:1000;font-family:'Barlow Condensed',sans-serif;font-size:14px;transition:top .2s" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Skip to content</a>
+<nav role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="logo"><span>HAMMER HANDS</span></a>
+  <a href="#pricing" class="nav-cta">See Programmes</a>
+  <a href="#contact" class="nav-cta" style="background:transparent;border:1px solid var(--crimson);margin-left:8px">Contact</a>
+</nav>
+
+<main role="main">
+<!-- HERO -->
+<div id="main-content"></div>
+<section class="hero">
+  <div class="pre-headline">Boxing Coaching · South Wales · Rhondda Valleys</div>
+
+  <h1>Tough Times.<br>Top Flight.<br><span class="red">Hammer Hands.</span></h1>
+
+  <p class="what-is-this">
+    Josh Williams is a professional boxer from the Rhondda Valleys — <strong>now coaching the next generation to fight smarter, train harder, and never quit.</strong><br><br>
+    From group Box Fit sessions to full fight camp preparation. Three programmes. One philosophy: outwork everyone.
+  </p>
+
+  <div class="hero-ctas">
+    <div class="hero-cta-label">Choose your programme:</div>
+    <div class="split">
+      <a href="jw_boxing.html" class="split-btn">
+        <div class="sb-icon">🥊</div>
+        <div class="sb-title">Box Fit</div>
+        <div class="sb-desc">Group boxing fitness &amp; conditioning</div>
+        <div class="sb-price">From £47/month</div>
+        <div class="sb-arrow">→</div>
+      </a>
+      <a href="jw_fitness.html" class="split-btn">
+        <div class="sb-icon">💪</div>
+        <div class="sb-title">Fight Ready</div>
+        <div class="sb-desc">Structured boxing programme &amp; sparring</div>
+        <div class="sb-price">From £97/month</div>
+        <div class="sb-arrow">→</div>
+      </a>
+      <a href="jw_elite.html" class="split-btn elite">
+        <div class="sb-icon">🏆</div>
+        <div class="sb-title">Elite Corner</div>
+        <div class="sb-desc">1-on-1 fight camp with Josh in your corner</div>
+        <div class="sb-price">£197/month · Limited spots</div>
+        <div class="sb-arrow">→</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="reassure">
+    <div class="ra">Pro fighter coaching</div>
+    <div class="ra">All levels welcome</div>
+    <div class="ra">Cancel anytime</div>
+    <div class="ra">Rhondda Valleys based</div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="how-inner">
+    <div class="section-tag">The Process</div>
+    <h2>Four Rounds. No Shortcuts.</h2>
+    <p class="h2-sub">From your first session to fight night. Here's how it works with Josh.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-n">01</div>
+        <div class="step-title">Assess</div>
+        <p>Josh evaluates where you are — fitness level, experience, goals. Whether you've never thrown a jab or you're prepping for your next bout, everyone starts with an honest assessment.</p>
+        <div class="step-plain"><p>No ego. No judgement. Just an honest look at where you are and where you want to be.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <div class="step-title">Train</div>
+        <p>Your programme is built around your level — technique drills, pad work, conditioning, strength. Everything structured with purpose, nothing wasted.</p>
+        <div class="step-plain"><p>Every session has a reason. You'll know why you're doing what you're doing.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <div class="step-title">Fight</div>
+        <p>When you're ready — and only when you're ready — you step up. Controlled sparring, technical rounds, and eventually competition if that's your path.</p>
+        <div class="step-plain"><p>Not everyone wants to compete. That's fine. But if you do, Josh has been there under the lights.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-n">04</div>
+        <div class="step-title">Win</div>
+        <p>Whether that's your first 5K without stopping, your first sparring session, or hand raised at Flow Fight Club — winning looks different for everyone. Josh gets you there.</p>
+        <div class="step-plain"><p>The discipline you build in the gym follows you everywhere. That's the real win.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="get">
+  <div class="section-tag">What's Included</div>
+  <h2>Everything You Need to Fight</h2>
+  <p class="h2-sub">No fluff. No gimmicks. Real boxing coaching from a real fighter.</p>
+
+  <div class="get-grid">
+    <div class="get-card">
+      <div class="get-icon">🥊</div>
+      <div class="get-title">Pad Work & Technique</div>
+      <p>One-on-one and group pad sessions. Jab, cross, hook, uppercut — drilled until it's second nature. Footwork, head movement, defence. The fundamentals that win fights.</p>
+      <p class="get-plain">"Fancy combinations mean nothing if your jab is weak."</p>
+    </div>
+    <div class="get-card">
+      <div class="get-icon">🏋️</div>
+      <div class="get-title">Strength & Conditioning</div>
+      <p>Boxing-specific S&C — explosive power, grip strength, core stability, cardio that doesn't quit. Built for the ring, not for Instagram.</p>
+      <p class="get-plain">"You gas out, you lose. Simple as that."</p>
+    </div>
+    <div class="get-card">
+      <div class="get-icon">🎯</div>
+      <div class="get-title">Structured Programming</div>
+      <p>Every week is planned. Skill development, conditioning blocks, active recovery. Progressive overload that makes sense for fighters — not bodybuilders.</p>
+      <p class="get-plain">"A programme, not a random workout."</p>
+    </div>
+    <div class="get-card">
+      <div class="get-icon">🧠</div>
+      <div class="get-title">Fight IQ & Strategy</div>
+      <p>Reading opponents, ring craft, when to pressure and when to box. The mental game that separates fighters from people who just throw punches.</p>
+      <p class="get-plain">"The smartest fighter in the ring usually wins."</p>
+    </div>
+    <div class="get-card">
+      <div class="get-icon">📹</div>
+      <div class="get-title">Video Breakdown</div>
+      <p>Film review of your sparring and fights. See what you're doing right, see what needs work. Josh breaks it down frame by frame.</p>
+      <p class="get-plain">"The camera doesn't lie. Neither does Josh."</p>
+    </div>
+    <div class="get-card">
+      <div class="get-icon">🤝</div>
+      <div class="get-title">Community & Support</div>
+      <p>Train alongside others on the same journey. From complete beginners to active competitors. The gym is the great equaliser — everyone grinds together.</p>
+      <p class="get-plain">"You'll never train alone."</p>
+    </div>
+  </div>
+</section>
+
+<!-- JOSH -->
+<section class="josh">
+  <div class="josh-inner">
+    <div style="position:relative">
+      <div class="josh-photo" style="background:url('images/victory-pose.jpg') center/cover no-repeat">
+        <div class="josh-lbl">
+          <div class="jn">JOSH WILLIAMS</div>
+          <div class="jr">"Hammer Hands" · Pro Boxer</div>
+        </div>
+      </div>
+      <div class="jbar"></div>
+    </div>
+    <div class="josh-content">
+      <div class="section-tag">The Fighter Behind the Coaching</div>
+      <h2>From the Valleys to the Ring</h2>
+      <p class="h2-sub" style="margin-bottom:24px">Not a fitness influencer. A fighter who's been through it and come out swinging.</p>
+      <p>Josh Williams grew up in the Rhondda Valleys — a place that builds tough people whether they like it or not. He found boxing when a lot of lads his age were finding trouble. The gym gave him structure. The ring gave him purpose.</p>
+      <p>Now a professional boxer competing at Flow Fight Club and beyond, Josh fights for more than belts. He fights to show that where you come from doesn't decide where you end up. His jersey carries Combat Parkinsons and Fighting Homelessness because the causes matter as much as the wins.</p>
+      <p>He coaches because he remembers what it felt like to have nobody in your corner. Now he makes sure nobody else has to feel that.</p>
+      <div class="josh-facts">
+        <div class="jf"><div class="jf-n">PRO</div><div class="jf-l">Active professional boxer</div></div>
+        <div class="jf"><div class="jf-n">FFC</div><div class="jf-l">Flow Fight Club competitor</div></div>
+        <div class="jf"><div class="jf-n">🏴󠁧󠁢󠁷󠁬󠁳󠁿</div><div class="jf-l">Rhondda Valleys, South Wales</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAUSES -->
+<section class="causes">
+  <div class="section-tag">Fighting For More</div>
+  <h2>It's Bigger Than Boxing</h2>
+  <p class="h2-sub" style="margin-bottom:0">Josh doesn't just fight for himself. Every time he steps in the ring, he carries these causes on his back.</p>
+  <div class="causes-grid">
+    <div class="cause-card">
+      <div class="cause-icon">🧠</div>
+      <div class="cause-name">Combat Parkinsons</div>
+      <p>Using the discipline and community of combat sports to support those living with Parkinson's disease. Movement is medicine. Boxing proves it every day.</p>
+    </div>
+    <div class="cause-card">
+      <div class="cause-icon">🏠</div>
+      <div class="cause-name">Fighting Homelessness</div>
+      <p>Raising awareness and funds for rough sleepers and those at risk. Because everyone deserves a corner to go back to — not just in the ring.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHO THIS IS FOR -->
+<section class="who">
+  <div class="section-tag">Is This Right For You?</div>
+  <h2>Honest About Who This Suits</h2>
+  <p class="h2-sub" style="margin-bottom:0">Josh's coaching works brilliantly for some people. Here's the honest version.</p>
+  <div class="who-grid" style="margin-top:40px">
+    <div class="who-card yes-card">
+      <div class="who-heading">✓ &nbsp; This is for you if...</div>
+      <ul class="who-list">
+        <li>You want to learn real boxing — not just hit a bag to music</li>
+        <li>You're willing to work hard and be coached honestly</li>
+        <li>You want to get fit with purpose, not just sweat for the sake of it</li>
+        <li>You're a complete beginner and want proper guidance from day one</li>
+        <li>You're an experienced fighter looking for elite preparation</li>
+        <li>You believe tough times build tough people</li>
+      </ul>
+    </div>
+    <div class="who-card no-card">
+      <div class="who-heading">✗ &nbsp; This probably isn't for you if...</div>
+      <ul class="who-list">
+        <li>You want a soft, no-pressure environment with no accountability</li>
+        <li>You're looking for a trendy fitness class with good lighting for selfies</li>
+        <li>You expect results without putting the work in</li>
+        <li>You can't take honest feedback about your technique</li>
+        <li>You need medical clearance for a serious condition (see your GP first)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="section-tag">Programmes</div>
+  <h2>Three Levels. One Standard.</h2>
+  <p class="h2-sub">Choose based on your goals. Every programme comes with Josh's coaching philosophy: work hard, stay humble, never quit.</p>
+
+  <div class="price-cards">
+    <!-- BOX FIT -->
+    <div class="pc">
+      <div class="pc-who">All Levels</div>
+      <div class="pc-name">Box Fit</div>
+      <div class="pc-tagline">Group boxing fitness. Get fit, learn to punch properly, build confidence.</div>
+      <div class="pc-price"><span>£</span>47</div>
+      <div class="pc-per">per month · cancel anytime</div>
+      <ul class="pc-includes">
+        <li>Group boxing fitness sessions</li>
+        <li>Pad work fundamentals</li>
+        <li>Boxing-specific conditioning</li>
+        <li>Technique coaching every session</li>
+        <li>All equipment provided</li>
+        <li>No experience needed</li>
+      </ul>
+      <a href="jw_boxing.html" class="pc-btn ghost">Learn More →</a>
+      <p class="pc-fn">Perfect for beginners &amp; fitness seekers</p>
+    </div>
+
+    <!-- FIGHT READY -->
+    <div class="pc featured">
+      <div class="pc-badge">MOST POPULAR</div>
+      <div class="pc-who">Committed Fighters</div>
+      <div class="pc-name">Fight Ready</div>
+      <div class="pc-tagline">Structured boxing programme with technique, sparring, and competition prep.</div>
+      <div class="pc-price"><span>£</span>97</div>
+      <div class="pc-per">per month · cancel anytime</div>
+      <ul class="pc-includes">
+        <li>Everything in Box Fit</li>
+        <li>Structured weekly programme</li>
+        <li>Technical sparring sessions</li>
+        <li>Fight IQ development</li>
+        <li>Video breakdown of your rounds</li>
+        <li>Competition pathway support</li>
+        <li>Strength &amp; conditioning plan</li>
+      </ul>
+      <a href="https://buy.stripe.com/7sY14hfa329XaIC3d24Rq0z" class="pc-btn">Join Fight Ready — £97/month →</a>
+      <p class="pc-fn">For those serious about boxing</p>
+    </div>
+
+    <!-- ELITE CORNER -->
+    <div class="pc">
+      <div class="pc-who">Competition Athletes</div>
+      <div class="pc-name">Elite Corner</div>
+      <div class="pc-tagline">Full fight camp. Josh in your corner. 1-on-1 preparation for competition.</div>
+      <div class="pc-price"><span>£</span>197</div>
+      <div class="pc-per">per month · limited spots</div>
+      <ul class="pc-includes">
+        <li>Everything in Fight Ready</li>
+        <li>1-on-1 sessions with Josh</li>
+        <li>Custom fight camp plan</li>
+        <li>Josh corners you on fight night</li>
+        <li>Opponent analysis &amp; strategy</li>
+        <li>Weight management guidance</li>
+        <li>Priority gym access</li>
+        <li>Direct WhatsApp line to Josh</li>
+      </ul>
+      <a href="jw_elite.html" class="pc-btn ghost">Learn About Elite Corner →</a>
+      <p class="pc-fn">For active competitors only</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="final">
+  <div class="section-tag">Ready</div>
+  <h2>Stop Thinking About It</h2>
+  <p>The hardest punch is the first step through the door. Everything after that is just work — and Josh will be right there with you.</p>
+  <a href="#pricing" class="btn">Choose Your Programme →</a>
+</div>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" style="padding:80px 20px;background:#111;border-top:1px solid rgba(196,69,54,.2)">
+  <div style="max-width:600px;margin:0 auto;text-align:center">
+    <p style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:600;letter-spacing:4px;color:var(--crimson);text-transform:uppercase;margin-bottom:14px">GET IN TOUCH</p>
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,5vw,42px);color:#fff;margin-bottom:10px">Ready to Start?</h2>
+    <p style="font-family:'Barlow Condensed',sans-serif;font-size:15px;color:rgba(255,255,255,.6);margin-bottom:30px">Drop your details and Josh will get back to you within 24 hours.</p>
+    <form action="https://formspree.io/f/mdalqaow" method="POST" style="display:flex;flex-direction:column;gap:14px" aria-label="Contact form">
+      <input type="text" name="name" placeholder="Your Name" required aria-label="Your name" style="padding:14px 18px;background:#1a1a1a;border:1px solid rgba(255,255,255,.1);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:15px;border-radius:0;outline:none" />
+      <input type="email" name="email" placeholder="Your Email" required aria-label="Your email" style="padding:14px 18px;background:#1a1a1a;border:1px solid rgba(255,255,255,.1);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:15px;border-radius:0;outline:none" />
+      <select name="programme" aria-label="Select programme" style="padding:14px 18px;background:#1a1a1a;border:1px solid rgba(255,255,255,.1);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:15px;border-radius:0;outline:none">
+        <option value="">Select Programme</option>
+        <option value="box-fit">Box Fit — £47/mo</option>
+        <option value="fight-ready">Fight Ready — £97/mo</option>
+        <option value="elite-corner">Elite Corner — £297/mo</option>
+      </select>
+      <textarea name="message" placeholder="Your Message (optional)" rows="4" aria-label="Your message" style="padding:14px 18px;background:#1a1a1a;border:1px solid rgba(255,255,255,.1);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:15px;border-radius:0;outline:none;resize:vertical"></textarea>
+      <button type="submit" style="padding:16px 32px;background:var(--crimson);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:none;cursor:pointer;transition:all .18s" onmouseover="this.style.background='#b83a2d'" onmouseout="this.style.background='var(--crimson)'">Send Message</button>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer role="contentinfo">
+  <a href="index.html" class="logo"><span>HAMMER HANDS</span></a>
+  <div class="foot-links">
+    <a href="jw_boxing.html">Box Fit</a>
+    <a href="jw_fitness.html">Fight Ready</a>
+    <a href="jw_elite.html">Elite Corner</a>
+  </div>
+  <p>Rhondda Valleys · South Wales · 🏴󠁧󠁢󠁷󠁬󠁳󠁿</p>
+
+  <div class="foot-social" style="display:flex;gap:20px;justify-content:center;margin-top:16px">
+    <a href="https://www.instagram.com/joshywilliams_" target="_blank" rel="noopener noreferrer" aria-label="Josh Williams on Instagram" style="color:rgba(255,255,255,.5);text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;transition:color .2s" onmouseover="this.style.color='var(--crimson)'" onmouseout="this.style.color='rgba(255,255,255,.5)'">Instagram</a>
+    <a href="https://www.facebook.com/joshywilliamsboxing" target="_blank" rel="noopener noreferrer" aria-label="Josh Williams on Facebook" style="color:rgba(255,255,255,.5);text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;transition:color .2s" onmouseover="this.style.color='var(--crimson)'" onmouseout="this.style.color='rgba(255,255,255,.5)'">Facebook</a>
+    <a href="https://www.tiktok.com/@hammerhands" target="_blank" rel="noopener noreferrer" aria-label="Hammer Hands on TikTok" style="color:rgba(255,255,255,.5);text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;transition:color .2s" onmouseover="this.style.color='var(--crimson)'" onmouseout="this.style.color='rgba(255,255,255,.5)'">TikTok</a>
+  </div>
+
+</footer>
+
+</body>
+</html>
