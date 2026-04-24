@@ -1,0 +1,25 @@
+/* TEAM */
+Brand: Josh Williams — Boxing · Fitness · Elite coaching
+Operator: Josh Williams (Tenerife territory · ambassador scope per CSS-CONST-001 v1.3)
+Contact: via site booking form
+
+/* SITE */
+Last update: 2026-04-24
+Language: English
+Standards: HTML5 · CSS3 · JSON-LD (schema.org) · node-stamp CSS-NODE-SIG-v1
+Hosting: GitHub Pages · PrecisePointway org
+URL: https://precisepointway.github.io/josh-williams-boxing/
+Compliance: fitness services · no medical claims · no nutritional prescription
+
+/* GOVERNANCE */
+Built by Codex Sovereign Systems Ltd back-office under doctrine
+Under above-so-below node-autonomy doctrine (7-layer spec · Cycle 2 compliance)
+Owner operator: Josh Williams · deploy-trigger access scope only
+
+/* CREDITS */
+Backoffice: Codex Sovereign Systems Ltd
+Design system: Manus Apostle Palette reference (pattern only · own palette used)
+Engine: Claude (Anthropic) under CSS doctrine
+
+/* THANKS */
+Fighters. Clients. The coaches Josh learned from.
