@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fighter's Hub — Josh Williams "Hammer Hands" | Training, Nutrition & Fight Prep</title>
+<meta name="description" content="Your complete fighter's toolkit. AI Coach, meal plans, calorie counter, shopping lists, mood tracker and fight-camp training — all in one place. Powered by Josh Williams Boxing.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://joshwilliamsboxing.com/jw_fighter_hub.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://joshwilliamsboxing.com/jw_fighter_hub.html">
+<meta property="og:title" content="Fighter's Hub — Josh Williams 'Hammer Hands'">
+<meta property="og:description" content="Complete fighter's toolkit: AI Coach, meal plans, calorie counter, shopping lists, mood tracker and fight-camp training.">
+<meta property="og:site_name" content="Josh Williams Boxing">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fighter's Hub — Josh Williams 'Hammer Hands'">
+<meta name="twitter:description" content="Complete fighter's toolkit: AI Coach, meal plans, calorie counter, shopping lists, mood tracker and fight-camp training.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Fighter's Hub — Josh Williams Boxing","description":"Complete fighter's toolkit with AI Coach, meal plans, calorie counter, shopping lists, mood tracker and fight-camp training.","url":"https://joshwilliamsboxing.com/jw_fighter_hub.html","isPartOf":{"@type":"WebSite","name":"Josh Williams Boxing","url":"https://joshwilliamsboxing.com/"}}
+</script>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+<style>
+:root{--bg:#0A0A0A;--surface:#111318;--border:#1E293B;--accent:#C44536;--accent-hover:#D4554A;--text:#F5F2EB;--muted:#9CA3AF;--green:#00CC88;--red:#FF3344;--yellow:#F5A623;--blue:#3B82F6}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,sans-serif;min-height:100vh}
+
+/* ── HEADER ── */
+.header{background:var(--surface);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.header h1{font-family:'Playfair Display',serif;color:var(--accent);font-size:1.4em}
+.header-nav{display:flex;gap:16px;flex-wrap:wrap}
+.header-nav a{color:var(--muted);text-decoration:none;font-size:.85em;transition:color .2s}
+.header-nav a:hover{color:var(--accent)}
+
+/* ── TOOL SELECTOR ── */
+.tool-bar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tool-btn{background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:8px 16px;color:var(--muted);font-size:.8em;font-weight:600;cursor:pointer;white-space:nowrap;transition:all .2s}
+.tool-btn:hover,.tool-btn.active{border-color:var(--accent);color:var(--accent);background:rgba(196,69,54,.1)}
+
+/* ── MAIN CONTAINER ── */
+.main{max-width:1200px;margin:0 auto;padding:20px}
+.tool-panel{display:none}
+.tool-panel.active{display:block}
+
+/* ── PANELS ── */
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px}
+.panel h2{font-family:'Playfair Display',serif;color:var(--accent);font-size:1.3em;margin-bottom:16px}
+.panel h3{color:var(--text);font-size:.95em;margin:12px 0 8px}
+
+/* ── GRID ── */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:880px){.grid-2{grid-template-columns:1fr}}
+
+/* ── CHAT ── */
+.chat-messages{flex:1;overflow-y:auto;margin-bottom:12px;max-height:500px;min-height:300px}
+.msg{margin-bottom:12px;padding:10px 14px;border-radius:10px;font-size:.9em;line-height:1.5;max-width:85%}
+.msg-ai{background:#1a2332;border:1px solid var(--border);color:var(--text)}
+.msg-user{background:var(--accent);color:#fff;margin-left:auto;text-align:right}
+.chat-input-row{display:flex;gap:8px}
+.chat-input{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 14px;color:var(--text);font-size:.9em;outline:none}
+.chat-input:focus{border-color:var(--accent)}
+.chat-send{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:10px 20px;font-weight:600;cursor:pointer}
+.chat-send:hover{background:var(--accent-hover)}
+.typing{color:var(--muted);font-size:.8em;font-style:italic;padding:4px 0;display:none}
+.quick-btns{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.quick-btn{background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:6px 14px;color:var(--muted);font-size:.78em;cursor:pointer;transition:all .2s}
+.quick-btn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ── FORMS ── */
+.gen-form{display:flex;flex-direction:column;gap:10px}
+.gen-form label{font-size:.82em;color:var(--muted);font-weight:500}
+.gen-form select,.gen-form input[type="text"],.gen-form input[type="number"]{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 12px;color:var(--text);font-size:.9em}
+.gen-form select:focus,.gen-form input:focus{border-color:var(--accent);outline:none}
+.gen-btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:10px 20px;font-weight:600;cursor:pointer;margin-top:8px;font-size:.9em}
+.gen-btn:hover{background:var(--accent-hover)}
+.gen-btn:disabled{opacity:.5;cursor:not-allowed}
+
+.output{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:14px;margin-top:12px;font-size:.85em;line-height:1.6;white-space:pre-wrap;max-height:500px;overflow-y:auto;display:none}
+.output.show{display:block}
+
+/* ── CALORIE COUNTER ── */
+.cal-log{max-height:300px;overflow-y:auto}
+.cal-row{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border-bottom:1px solid var(--border);font-size:.85em}
+.cal-row:hover{background:rgba(196,69,54,.05)}
+.cal-total{background:var(--accent);color:#fff;padding:12px;border-radius:8px;text-align:center;font-weight:700;font-size:1.1em;margin-top:12px}
+.cal-macro-bar{display:flex;gap:12px;margin-top:8px;justify-content:center}
+.cal-macro{font-size:.8em;color:var(--muted)}
+.cal-macro span{color:var(--text);font-weight:600}
+.remove-btn{background:none;border:none;color:var(--red);cursor:pointer;font-size:.9em}
+
+/* ── SHOPPING LIST ── */
+.shop-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:.88em}
+.shop-item input[type="checkbox"]{accent-color:var(--accent);width:18px;height:18px}
+.shop-item.checked{text-decoration:line-through;color:var(--muted)}
+.shop-category{color:var(--accent);font-weight:700;font-size:.9em;margin-top:16px;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}
+.shop-actions{display:flex;gap:8px;margin-top:12px}
+.shop-btn{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 16px;color:var(--text);font-size:.82em;cursor:pointer}
+.shop-btn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ── MOOD TRACKER ── */
+.mood-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:16px}
+.mood-btn{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 8px;text-align:center;cursor:pointer;transition:all .2s;font-size:.75em}
+.mood-btn:hover,.mood-btn.selected{border-color:var(--accent);background:rgba(196,69,54,.1)}
+.mood-btn .emoji{font-size:1.8em;display:block;margin-bottom:4px}
+.mood-history{max-height:300px;overflow-y:auto}
+.mood-entry{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid var(--border);font-size:.85em}
+.mood-entry .date{color:var(--muted);font-size:.8em}
+.slider-group{margin-bottom:12px}
+.slider-group label{display:flex;justify-content:space-between;font-size:.82em;color:var(--muted);margin-bottom:4px}
+.slider-group label span{color:var(--text);font-weight:600}
+input[type="range"]{width:100%;accent-color:var(--accent)}
+
+/* ── MENU PLAN ── */
+.menu-day{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:12px}
+.menu-day h4{color:var(--accent);font-size:.9em;margin-bottom:8px}
+.menu-meal{padding:6px 0;border-bottom:1px solid rgba(30,41,59,.5);font-size:.85em}
+.menu-meal:last-child{border-bottom:none}
+.menu-meal strong{color:var(--text)}
+.menu-meal span{color:var(--muted);font-size:.8em}
+
+/* ── PRINT ── */
+@media print{.header,.tool-bar,.header-nav,.quick-btns,.gen-btn,.chat-input-row{display:none!important}.panel{break-inside:avoid;border:1px solid #ccc}}
+
+.disclaimer{text-align:center;padding:16px;font-size:.7em;color:#444;border-top:1px solid var(--border);margin-top:20px}
+.disclaimer a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════ HEADER ════════════════════════════════════════════════ -->
+<div class="header">
+  <h1>Fighter's Hub</h1>
+  <div class="header-nav">
+    <a href="index.html">Home</a>
+    <a href="jw_boxing.html">Box Fit</a>
+    <a href="jw_fitness.html">Fight Ready</a>
+    <a href="jw_elite.html">Elite Corner</a>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════ TOOL BAR ════════════════════════════════════════════════ -->
+<div class="tool-bar">
+  <div class="tool-btn active" onclick="switchTool('coach')">AI Coach</div>
+  <div class="tool-btn" onclick="switchTool('meal')">Meal Plan</div>
+  <div class="tool-btn" onclick="switchTool('calories')">Calorie Counter</div>
+  <div class="tool-btn" onclick="switchTool('shopping')">Shopping List</div>
+  <div class="tool-btn" onclick="switchTool('menu')">Menu Plan</div>
+  <div class="tool-btn" onclick="switchTool('mood')">Mood Tracker</div>
+  <div class="tool-btn" onclick="switchTool('training')">Training Plan</div>
+  <div class="tool-btn" onclick="switchTool('recovery')">Recovery</div>
+</div>
+
+<div class="main">
+
+<!-- ════════════════════════════════════════════════ 1. AI COACH ════════════════════════════════════════════════ -->
+<div class="tool-panel active" id="panel-coach">
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Chat with Your AI Coach</h2>
+      <div class="quick-btns">
+        <div class="quick-btn" onclick="askQuick('What should I eat before a fight?')">Pre-fight meal</div>
+        <div class="quick-btn" onclick="askQuick('Give me a 6-week fight camp plan')">Fight camp</div>
+        <div class="quick-btn" onclick="askQuick('How do I cut weight safely for weigh-in?')">Weight cut</div>
+        <div class="quick-btn" onclick="askQuick('Best recovery after a fight?')">Post-fight recovery</div>
+        <div class="quick-btn" onclick="askQuick('Budget meal prep for fighters')">Budget meals</div>
+        <div class="quick-btn" onclick="askQuick('How to build knockout power?')">Power training</div>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="msg msg-ai">Alright! I'm your Fighter's Hub AI Coach. Ask me anything about training, nutrition, fight prep, weight cutting, or recovery. Straight answers, no fluff — built for fighters who graft.</div>
+      </div>
+      <div class="typing" id="typing">Coach is thinking...</div>
+      <div class="chat-input-row">
+        <input class="chat-input" id="chat-input" placeholder="Ask about training, nutrition, fight prep..." onkeydown="if(event.key==='Enter')sendChat()">
+        <button class="chat-send" onclick="sendChat()">Send</button>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Quick Generators</h2>
+      <div class="gen-form">
+        <label>What do you need?</label>
+        <select id="quick-type">
+          <option value="fight_camp">6-Week Fight Camp Plan</option>
+          <option value="weight_cut">Weight Cut Protocol</option>
+          <option value="strength">Strength & Power Programme</option>
+          <option value="cardio">Fighter's Cardio Plan</option>
+          <option value="budget_meals">Budget Fighter Meals (under £30/week)</option>
+        </select>
+        <label>Your Weight (kg)</label>
+        <input type="number" id="quick-weight" value="75" min="40" max="150">
+        <label>Weeks Until Fight</label>
+        <select id="quick-weeks">
+          <option value="2">2 weeks</option>
+          <option value="4">4 weeks</option>
+          <option value="6" selected>6 weeks</option>
+          <option value="8">8 weeks</option>
+          <option value="12">12 weeks</option>
+        </select>
+        <button class="gen-btn" onclick="generateQuick()">Generate Plan</button>
+      </div>
+      <div class="output" id="quick-output"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════ 2. MEAL PLAN ════════════════════════════════════════════════ -->
+<div class="tool-panel" id="panel-meal">
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Generate Your Meal Plan</h2>
+      <div class="gen-form">
+        <label>Goal</label>
+        <select id="m-goal">
+          <option value="fight_weight">Make Fight Weight</option>
+          <option value="lean_muscle">Lean Muscle Gain</option>
+          <option value="fat_loss">Fat Loss</option>
+          <option value="maintenance">Maintenance</option>
+          <option value="bulk">Off-Season Bulk</option>
+        </select>
+        <label>Body Weight (kg)</label>
+        <input type="number" id="m-weight" value="75" min="40" max="150">
+        <label>Target Calories (blank for auto)</label>
+        <input type="number" id="m-cals" placeholder="e.g. 2200">
+        <label>Budget Level</label>
+        <select id="m-budget">
+          <option value="tight">Tight (under £30/week)</option>
+          <option value="moderate" selected>Moderate (£30-50/week)</option>
+          <option value="flexible">Flexible (£50+/week)</option>
+        </select>
+        <label>Dietary Preference</label>
+        <select id="m-diet">
+          <option value="no_restriction">No Restrictions</option>
+          <option value="high_protein">High Protein</option>
+          <option value="halal">Halal</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="vegan">Vegan</option>
+        </select>
+        <label>Meals Per Day</label>
+        <select id="m-meals">
+          <option value="3">3 meals</option>
+          <option value="4" selected>4 meals (3 + snack)</option>
+          <option value="5">5 meals</option>
+        </select>
+        <button class="gen-btn" onclick="generateMeal()">Generate Meal Plan</button>
+      </div>
+      <div class="output" id="m-output"></div>
+    </div>
+    <div class="panel">
+      <h2>Fighter's Nutrition Guide</h2>
+      <div style="font-size:.88em;line-height:1.7;color:var(--muted)">
+        <h3 style="color:var(--accent)">Fight Week Nutrition</h3>
+        <p><strong>7 days out:</strong> Start reducing carbs gradually. Increase water to 4-5L/day.</p>
+        <p><strong>3 days out:</strong> Low carb, moderate protein, minimal sodium. Water load.</p>
+        <p><strong>Weigh-in day:</strong> Sip water only. Post weigh-in: rehydrate with electrolytes, eat easily digestible carbs.</p>
+        <p><strong>Fight day:</strong> Light meals 3-4 hours before. Banana + honey 1 hour before. Sip water throughout.</p>
+        <h3 style="color:var(--accent);margin-top:16px">Budget Fighter Staples</h3>
+        <p>Oats, eggs, chicken thighs, rice, frozen veg, tinned tuna, peanut butter, bananas, sweet potatoes, Greek yoghurt. Under £25/week if you shop smart.</p>
+        <h3 style="color:var(--accent);margin-top:16px">Macros for Fighters</h3>
+        <p><strong>Protein:</strong> 2-2.5g per kg (muscle repair + power)</p>
+        <p><strong>Carbs:</strong> 4-6g per kg on training days (fuel)</p>
+        <p><strong>Fat:</strong> 0.8-1g per kg (hormones + joints)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════ 3. CALORIE COUNTER ════════════════════════════════════════════════ -->
+<div class="tool-panel" id="panel-calories">
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Calorie Finder</h2>
+      <div class="gen-form">
+        <label>Search Food</label>
+        <input type="text" id="cal-search" placeholder="e.g. chicken breast, rice, banana..." onkeydown="if(event.key==='Enter')searchFood()">
+        <button class="gen-btn" onclick="searchFood()">Search</button>
+      </div>
+      <div id="cal-results" style="margin-top:12px"></div>
+    </div>
+    <div class="panel">
+      <h2>Today's Log</h2>
+      <div class="cal-log" id="cal-log">
+        <div style="text-align:center;color:var(--muted);padding:40px;font-size:.9em">No foods logged yet. Search and add foods from the left panel.</div>
+      </div>
+      <div class="cal-total" id="cal-total" style="display:none">
+        <div id="cal-total-num">0 kcal</div>
+        <div class="cal-macro-bar">
+          <div class="cal-macro">P: <span id="cal-total-p">0g</span></div>
+          <div class="cal-macro">C: <span id="cal-total-c">0g</span></div>
+          <div class="cal-macro">F: <span id="cal-total-f">0g</span></div>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:12px">
+        <button class="gen-btn" onclick="clearCalLog()" style="background:var(--bg);border:1px solid var(--border);color:var(--text);flex:1">Clear Log</button>
+        <button class="gen-btn" onclick="generateShoppingFromLog()" style="flex:1">Send to Shopping List</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════ 4. SHOPPING LIST ════════════════════════════════════════════════ -->
+<div class="tool-panel" id="panel-shopping">
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Shopping List Generator</h2>
+      <div class="gen-form">
+        <label>Generate From</label>
+        <select id="shop-source">
+          <option value="budget_fight">Budget Fight Camp (under £30)</option>
+          <option value="lean_muscle">Lean Muscle Building</option>
+          <option value="weight_cut">Weight Cut Week</option>
+          <option value="custom">Custom (from meal plan)</option>
+        </select>
+        <label>Days to Shop For</label>
+        <select id="shop-days">
+          <option value="3">3 days</option>
+          <option value="5">5 days</option>
+          <option value="7" selected>7 days (full week)</option>
+        </select>
+        <button class="gen-btn" onclick="generateShopping()">Generate Shopping List</button>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Your Shopping List</h2>
+      <div id="shop-list">
+        <div style="text-align:center;color:var(--muted);padding:40px;font-size:.9em">Generate a list or add items manually below.</div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:12px">
+        <input type="text" id="shop-add-input" class="chat-input" placeholder="Add custom item..." onkeydown="if(event.key==='Enter')addShopItem()">
+        <button class="gen-btn" onclick="addShopItem()">Add</button>
+      </div>
+      <div class="shop-actions">
+        <button class="shop-btn" onclick="printShopList()">Print List</button>
+        <button class="shop-btn" onclick="copyShopList()">Copy to Clipboard</button>
+        <button class="shop-btn" onclick="clearShopList()">Clear All</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════ 5. MENU PLAN ════════════════════════════════════════════════ -->
+<div class="tool-panel" id="panel-menu">
+  <div class="panel">
+    <h2>Weekly Fight Camp Menu</h2>
+    <div class="gen-form" style="flex-direction:row;flex-wrap:wrap;gap:12px;margin-bottom:16px">
+      <div>
+        <label>Goal</label>
+        <select id="menu-goal">
+          <option value="fight_prep">Fight Prep (making weight)</option>
+          <option value="training">Training Camp (performance)</option>
+          <option value="recovery">Recovery Week</option>
+        </select>
+      </div>
+      <div>
+        <label>Budget</label>
+        <select id="menu-budget">
+          <option value="tight">Under £30/week</option>
+          <option value="moderate" selected>£30-50/week</option>
+        </select>
+      </div>
+      <div>
+        <button class="gen-btn" onclick="generateMenu()" style="margin-top:18px">Generate Weekly Menu</button>
+      </div>
+    </div>
+    <div id="menu-output"></div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════ 6. MOOD TRACKER ════════════════════════════════════════════════ -->
+<div class="tool-panel" id="panel-mood">
+  <div class="grid-2">
+    <div class="panel">
+      <h2>How Are You Feeling?</h2>
+      <div class="mood-grid" id="mood-grid">
+        <div class="mood-btn" onclick="selectMood(this,'fired_up')"><span class="emoji">🔥</span>Fired Up</div>
+        <div class="mood-btn" onclick="selectMood(this,'strong')"><span class="emoji">💪</span>Strong</div>
+        <div class="mood-btn" onclick="selectMood(this,'steady')"><span class="emoji">😤</span>Steady</div>
+        <div class="mood-btn" onclick="selectMood(this,'tired')"><span class="emoji">😴</span>Tired</div>
+        <div class="mood-btn" onclick="selectMood(this,'struggling')"><span class="emoji">😞</span>Struggling</div>
+      </div>
+      <div class="slider-group">
+        <label>Energy Level <span id="energy-val">5</span>/10</label>
+        <input type="range" id="energy-slider" min="1" max="10" value="5" oninput="document.getElementById('energy-val').textContent=this.value">
+      </div>
+      <div class="slider-group">
+        <label>Fight Readiness <span id="ready-val">5</span>/10</label>
+        <input type="range" id="ready-slider" min="1" max="10" value="5" oninput="document.getElementById('ready-val').textContent=this.value">
+      </div>
+      <div class="slider-group">
+        <label>Sleep Quality <span id="sleep-val">5</span>/10</label>
+        <input type="range" id="sleep-slider" min="1" max="10" value="5" oninput="document.getElementById('sleep-val').textContent=this.value">
+      </div>
+      <div class="slider-group">
+        <label>Stress Level <span id="stress-val">5</span>/10</label>
+        <input type="range" id="stress-slider" min="1" max="10" value="5" oninput="document.getElementById('stress-val').textContent=this.value">
+      </div>
+      <div class="gen-form">
+        <label>Notes (optional)</label>
+        <input type="text" id="mood-notes" placeholder="e.g. Sparring went well, shoulder tight...">
+        <button class="gen-btn" onclick="logMood()">Log Today's Check-In</button>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Mood History</h2>
+      <div class="mood-history" id="mood-history">
+        <div style="text-align:center;color:var(--muted);padding:40px;font-size:.9em">No entries yet. Log your first check-in.</div>
+      </div>
+      <div style="margin-top:12px">
+        <button class="gen-btn" onclick="clearMoodHistory()" style="background:var(--bg);border:1px solid var(--border);color:var(--text);width:100%">Clear History</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════ 7. TRAINING PLAN ════════════════════════════════════════════════ -->
+<div class="tool-panel" id="panel-training">
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Generate Training Plan</h2>
+      <div class="gen-form">
+        <label>Goal</label>
+        <select id="t-goal">
+          <option value="fight_camp">Fight Camp (6 weeks out)</option>
+          <option value="power">Build Knockout Power</option>
+          <option value="cardio">Fighter's Cardio & Endurance</option>
+          <option value="strength">Strength & Conditioning</option>
+          <option value="general">General Fitness</option>
+        </select>
+        <label>Experience Level</label>
+        <select id="t-level">
+          <option value="beginner">Beginner (0-1 year)</option>
+          <option value="intermediate" selected>Intermediate (1-3 years)</option>
+          <option value="advanced">Advanced (3+ years)</option>
+          <option value="pro">Pro Fighter</option>
+        </select>
+        <label>Days Per Week</label>
+        <select id="t-days">
+          <option value="3">3 days</option>
+          <option value="4">4 days</option>
+          <option value="5" selected>5 days</option>
+          <option value="6">6 days</option>
+        </select>
+        <label>Equipment Available</label>
+        <select id="t-equip">
+          <option value="full_gym">Full Gym + Boxing Gym</option>
+          <option value="boxing_only">Boxing Gym Only</option>
+          <option value="home">Home Setup</option>
+          <option value="minimal">Minimal — bag + skipping rope</option>
+        </select>
+        <label>Any Injuries?</label>
+        <input type="text" id="t-injuries" placeholder="e.g. bad shoulder, hand injury, none">
+        <button class="gen-btn" onclick="generateTraining()">Generate Training Plan</button>
+      </div>
+      <div class="output" id="t-output"></div>
+    </div>
+    <div class="panel">
+      <h2>Fighter's Training Principles</h2>
+      <div style="font-size:.88em;line-height:1.7;color:var(--muted)">
+        <h3 style="color:var(--accent)">The Hammer Hands Method</h3>
+        <p><strong>Power comes from the ground up.</strong> Legs, hips, core, then hands. If your legs are weak, your punches are weak.</p>
+        <h3 style="color:var(--accent);margin-top:16px">Fight Camp Structure</h3>
+        <p><strong>Weeks 6-4:</strong> High volume. Build your base. Strength, cardio, sparring.</p>
+        <p><strong>Weeks 3-2:</strong> Peak intensity. Hard sparring, speed work, tactical drilling.</p>
+        <p><strong>Week 1:</strong> Taper down. Light work, stay sharp, make weight, rest.</p>
+        <h3 style="color:var(--accent);margin-top:16px">Non-Negotiables</h3>
+        <p>Roadwork 3x/week minimum. Bag work daily. Sparring 2x/week in camp. Core every session. Stretch after every session — injuries end careers.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════ 8. RECOVERY ════════════════════════════════════════════════ -->
+<div class="tool-panel" id="panel-recovery">
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Recovery Protocol</h2>
+      <div class="gen-form">
+        <label>What's the issue?</label>
+        <select id="r-issue">
+          <option value="post_fight">Post-Fight Recovery</option>
+          <option value="soreness">General Muscle Soreness (DOMS)</option>
+          <option value="hand_injury">Hand / Wrist Pain</option>
+          <option value="fatigue">Chronic Fatigue / Overtraining</option>
+          <option value="sleep">Poor Sleep</option>
+          <option value="motivation">Low Motivation / Mental Burnout</option>
+          <option value="weight_cut_recovery">Post Weight-Cut Recovery</option>
+        </select>
+        <label>How long has this been going on?</label>
+        <select id="r-duration">
+          <option value="days">A few days</option>
+          <option value="weeks">1-2 weeks</option>
+          <option value="months">Over a month</option>
+        </select>
+        <label>Current training frequency</label>
+        <select id="r-freq">
+          <option value="3">3 days/week</option>
+          <option value="4">4 days/week</option>
+          <option value="5" selected>5 days/week</option>
+          <option value="6">6+ days/week</option>
+        </select>
+        <button class="gen-btn" onclick="generateRecovery()">Get Recovery Plan</button>
+      </div>
+      <div class="output" id="r-output"></div>
+    </div>
+    <div class="panel">
+      <h2>Fighter's Recovery Essentials</h2>
+      <div style="font-size:.88em;line-height:1.7;color:var(--muted)">
+        <h3 style="color:var(--accent)">The 48-Hour Rule</h3>
+        <p>After a fight or hard sparring: 48 hours minimum before any impact training. Your brain needs time. This is non-negotiable.</p>
+        <h3 style="color:var(--accent);margin-top:16px">Daily Recovery Stack</h3>
+        <p><strong>Sleep:</strong> 8-9 hours. Growth hormone peaks during deep sleep.</p>
+        <p><strong>Hydration:</strong> 3-4L water daily. More during camp.</p>
+        <p><strong>Nutrition:</strong> Protein within 30 mins of training. Carbs to refuel.</p>
+        <p><strong>Mobility:</strong> 10 mins stretching after every session.</p>
+        <h3 style="color:var(--accent);margin-top:16px">Hand Care for Fighters</h3>
+        <p>Ice hands after heavy bag work. Wrap properly every time. If knuckles swell — rest, don't push through. Hands are your career.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /main -->
+
+<div class="disclaimer">
+  AI-generated plans are for guidance only. Consult a qualified professional before starting any new training or nutrition programme.
+  For 1-on-1 coaching from Josh directly, <a href="jw_elite.html">join the Elite Corner</a>.
+</div>
+
+<!-- ════════════════════════════════════════════════ JAVASCRIPT ════════════════════════════════════════════════ -->
+<script>
+// ── TOOL SWITCHING ──
+function switchTool(name) {
+  document.querySelectorAll('.tool-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tool-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// ══════════════════════════════════════════════════
+// 1. AI COACH CHAT
+// ══════════════════════════════════════════════════
+function addMsg(text, isUser) {
+  var el = document.createElement('div');
+  el.className = 'msg ' + (isUser ? 'msg-user' : 'msg-ai');
+  el.textContent = text;
+  document.getElementById('chat-messages').appendChild(el);
+  document.getElementById('chat-messages').scrollTop = 99999;
+}
+
+function askQuick(q) {
+  document.getElementById('chat-input').value = q;
+  sendChat();
+}
+
+function sendChat() {
+  var input = document.getElementById('chat-input');
+  var q = input.value.trim();
+  if (!q) return;
+  input.value = '';
+  addMsg(q, true);
+  document.getElementById('typing').style.display = 'block';
+  setTimeout(function() {
+    addMsg(generateChatResponse(q), false);
+    document.getElementById('typing').style.display = 'none';
+  }, 800 + Math.random() * 1200);
+}
+
+function generateChatResponse(q) {
+  var ql = q.toLowerCase();
+  if (ql.includes('before a fight') || ql.includes('pre-fight') || ql.includes('fight day')) {
+    return 'Fight day nutrition:\n\n3-4 hours before: Light meal — chicken + rice or pasta + lean sauce. Easy to digest, moderate carbs.\n\n1 hour before: Banana + honey + sip of water. Quick energy, no heaviness.\n\nDuring: Sip water between rounds. Some fighters use diluted sports drink.\n\nAfter: Rehydrate immediately. Protein + carbs within 30 mins. Then eat a proper meal when you can stomach it.\n\nKey rule: NEVER try new foods on fight day. Eat what you know works.';
+  }
+  if (ql.includes('fight camp') || ql.includes('camp plan')) {
+    return '6-WEEK FIGHT CAMP STRUCTURE:\n\nWEEKS 6-5 (Base Building):\n- Roadwork: 5K runs 3x/week\n- Strength: 3x/week (compound lifts)\n- Boxing: Technical work, pad work, bag work daily\n- Sparring: Light, 2x/week\n\nWEEKS 4-3 (Peak Intensity):\n- Roadwork: Intervals + hill sprints\n- Strength: 2x/week (explosive power)\n- Boxing: Hard sparring 2-3x, tactical drilling\n- Conditioning: Circuit training 2x\n\nWEEKS 2-1 (Taper):\n- Light roadwork only\n- No heavy sparring (last hard spar 10 days out)\n- Pad work for sharpness\n- Focus: Weight, rest, mental prep\n\nUse the Training Plan generator for a detailed daily breakdown.';
+  }
+  if (ql.includes('weight cut') || ql.includes('cut weight') || ql.includes('make weight') || ql.includes('weigh-in')) {
+    return 'SAFE WEIGHT CUT PROTOCOL:\n\n⚠ Never cut more than 5-7% of bodyweight. Anything more needs medical supervision.\n\n2 WEEKS OUT:\n- Reduce carbs gradually (not zero — you still need to train)\n- Increase water to 5-6L/day (water loading)\n- Cut sodium slowly\n\n1 WEEK OUT:\n- Low carb, moderate protein, low sodium\n- Water: 5L → 3L → 1L → sips only\n- Light training only\n\nWEIGH-IN DAY:\n- Sips of water only until weigh-in\n- Hot bath if needed for last 1-2lbs\n\nPOST WEIGH-IN (critical):\n- Rehydrate with electrolytes (not just water)\n- Easily digestible carbs: rice, banana, sports drink\n- Small meals every 2 hours until fight\n- Do NOT binge — your stomach has shrunk\n\nThis is the difference between winning and losing. Get it right.';
+  }
+  if (ql.includes('budget') || ql.includes('cheap') || ql.includes('money') || ql.includes('afford')) {
+    return 'BUDGET FIGHTER MEAL PREP (under £25/week):\n\nSTAPLES:\n- Oats (1kg = £1.50) — breakfast sorted\n- Eggs (15 pack = £2.50) — protein powerhouse\n- Chicken thighs (1kg = £3) — cheaper than breast, more flavour\n- Rice (2kg = £2) — fuel for days\n- Frozen veg (1kg = £1) — micronutrients sorted\n- Tinned tuna (4 pack = £3) — quick protein\n- Peanut butter (£2) — healthy fats + protein\n- Bananas (£1) — pre-training fuel\n- Sweet potatoes (£1.50) — slow-release energy\n- Greek yoghurt (500g = £1.50) — snack + protein\n\nTOTAL: ~£19-23/week\n\nMEAL PREP SUNDAY: Cook 2kg chicken + 1kg rice + portion into 10 containers. That\'s lunch and dinner sorted for the week.\n\nBeing skint doesn\'t mean eating badly. Some of the best fighters in history trained on rice and eggs.';
+  }
+  if (ql.includes('knockout') || ql.includes('power') || ql.includes('punch harder')) {
+    return 'BUILDING KNOCKOUT POWER:\n\nPower is technique + speed + strength. In that order.\n\n1. TECHNIQUE (most important):\n- Rotate hips fully on every punch\n- Plant your feet — power comes from the ground\n- Snap the punch — don\'t push it\n- Exhale sharply on impact\n\n2. SPEED WORK:\n- Shadow boxing with 1kg weights (2x3 min rounds)\n- Speed bag daily\n- Resistance band punches\n- Clap push-ups 3x10\n\n3. STRENGTH:\n- Deadlifts (posterior chain = power)\n- Medicine ball throws (rotational power)\n- Landmine press (punch-specific)\n- Farmer\'s walks (grip + core)\n\n4. BAG WORK:\n- Heavy bag: Focus on sitting down on your shots\n- Double-end bag: Timing and accuracy\n- Practice your best combination 1000 times\n\nJosh\'s tip: "The punch they don\'t see is the one that drops them. Set it up."';
+  }
+  if (ql.includes('recovery') || ql.includes('after a fight') || ql.includes('post-fight')) {
+    return 'POST-FIGHT RECOVERY PROTOCOL:\n\nFIRST 24 HOURS:\n- Ice any swelling (15 on, 15 off)\n- Rehydrate aggressively (electrolytes + water)\n- Eat: protein + carbs + anti-inflammatory foods\n- Sleep as much as possible\n- NO alcohol (it slows healing)\n\n48-72 HOURS:\n- Light walking only (no training)\n- Epsom salt bath\n- If you took head shots: monitor for concussion symptoms\n- Gentle stretching\n\n1 WEEK POST-FIGHT:\n- Light cardio (swimming, cycling)\n- No sparring for minimum 2 weeks\n- No heavy bag for 1 week (let hands heal)\n- Sports massage\n\n2+ WEEKS:\n- Gradually return to training\n- First sparring should be light/technical only\n- Listen to your body — rushing back causes injuries\n\nYour body just went to war. Respect the recovery.';
+  }
+  if (ql.includes('protein')) {
+    var w = (ql.match(/(\d+)\s*kg/) || [0,75])[1];
+    return 'For a fighter at ' + w + 'kg, aim for ' + Math.round(w*2) + '-' + Math.round(w*2.5) + 'g protein per day.\n\nBest sources:\n- Chicken breast/thigh: 25-31g per 100g\n- Eggs: 6g each (cheap and easy)\n- Greek yoghurt: 10g per 100g\n- Tinned tuna: 25g per tin\n- Whey protein: 25g per scoop\n\nSpread across 4-5 meals. Protein within 30 mins of training is ideal but total daily intake matters most.\n\nOn a budget? Eggs + chicken thighs + oats + peanut butter. That\'s 150g+ protein for under £5/day.';
+  }
+  if (ql.includes('sleep') || ql.includes('rest')) {
+    return 'SLEEP PROTOCOL FOR FIGHTERS:\n\n8-9 hours minimum during camp. This is where your body repairs.\n\nBEDTIME ROUTINE:\n- No screens 1 hour before bed\n- Room temperature: 18-20°C\n- Magnesium glycinate: 400mg before bed\n- No caffeine after 2pm\n- No heavy meals within 2 hours of bed\n\nIF YOU CAN\'T SLEEP:\n- Box breathing: 4 seconds in, 4 hold, 4 out, 4 hold\n- Write tomorrow\'s to-do list (clears your head)\n- Read (not your phone)\n- Melatonin: 1-3mg if needed short-term\n\nFIGHT WEEK:\n- Anxiety will mess with sleep — this is normal\n- Stick to your routine\n- Visualise the fight going well\n- Even lying still with eyes closed helps recovery';
+  }
+  return 'Good question. Here\'s what I\'d suggest:\n\nFor fight-specific training, use the Training Plan tab — it builds full fight camp programmes.\n\nFor nutrition, the Meal Plan generator creates daily plans with macros calculated for your weight and budget.\n\nFor tracking your daily food, use the Calorie Counter.\n\nFor mental health and fight readiness, check the Mood Tracker — it helps you spot patterns.\n\nFor anything else, just ask — I cover training, nutrition, fight prep, weight cutting, recovery, and mental game.\n\nFor 1-on-1 coaching directly from Josh, check out the Elite Corner.';
+}
+
+// Quick Generator
+function generateQuick() {
+  var type = document.getElementById('quick-type').value;
+  var weight = parseInt(document.getElementById('quick-weight').value) || 75;
+  var weeks = document.getElementById('quick-weeks').value;
+  var el = document.getElementById('quick-output');
+  var plans = {
+    'fight_camp': 'FIGHT CAMP — ' + weeks + ' WEEKS OUT\nFighter Weight: ' + weight + 'kg\n' + '='.repeat(40) + '\n\nWEEK STRUCTURE:\nMon: Roadwork AM (5K) + Boxing PM (pad work + bag)\nTue: Strength & Conditioning AM + Sparring PM\nWed: Active Recovery (swim/walk) + Stretching\nThu: Intervals AM (hill sprints) + Boxing PM (technical)\nFri: Strength AM + Sparring PM\nSat: Long run (8-10K) + Light bag work\nSun: Complete rest\n\nSTRENGTH SESSIONS:\nDeadlift: 4x5\nMedicine Ball Slams: 3x10\nPull-ups: 4x8\nLandmine Press: 3x10\nFarmer\'s Walks: 3x40m\nCore Circuit: 3 rounds\n\nNUTRITION:\nCalories: ~' + Math.round(weight * 35) + ' kcal/day\nProtein: ' + Math.round(weight * 2.2) + 'g\nCarbs: ' + Math.round(weight * 5) + 'g\nFat: ' + Math.round(weight * 1) + 'g\n\nAdjust calories down in final 2 weeks if cutting weight.',
+    'weight_cut': 'WEIGHT CUT PROTOCOL — ' + weeks + ' WEEKS\nCurrent Weight: ' + weight + 'kg\n' + '='.repeat(40) + '\n\nSafe target: ' + Math.round(weight * 0.95) + '-' + Math.round(weight * 0.93) + 'kg\n\nWEEK ' + weeks + '-3:\n- Calories: ' + Math.round(weight * 28) + ' kcal/day\n- Water: 4-5L/day\n- Low sodium\n- Reduce carbs by 20%\n\nWEEK 2:\n- Calories: ' + Math.round(weight * 24) + ' kcal/day\n- Water loading: 6L/day\n- Cut sodium further\n- Light training only\n\nFINAL WEEK:\n- Mon-Wed: Water 4L → 2L → 1L\n- Thu: Sips only\n- Fri: Weigh-in\n- Post weigh-in: Electrolytes + rice + banana\n\n⚠ If you need to cut more than 5kg, consult a professional.',
+    'strength': 'STRENGTH & POWER PROGRAMME\nFighter Weight: ' + weight + 'kg | ' + weeks + ' Weeks\n' + '='.repeat(40) + '\n\nDAY 1 — LOWER BODY POWER\nBack Squat: 5x5 (heavy)\nBox Jumps: 4x5\nRomanian Deadlift: 3x8\nSled Push: 4x20m\nCalf Raises: 3x15\n\nDAY 2 — UPPER BODY POWER\nBench Press: 5x5\nMedicine Ball Chest Pass: 4x8\nWeighted Pull-ups: 4x6\nLandmine Press: 3x10/side\nFace Pulls: 3x15\n\nDAY 3 — EXPLOSIVE/FIGHT-SPECIFIC\nPower Cleans: 5x3\nMedicine Ball Rotational Throws: 4x8/side\nBattle Ropes: 4x30s\nFarmer\'s Walks: 3x40m\nCore Circuit: Plank, Russian Twists, Hanging Leg Raises (3 rounds)',
+    'cardio': 'FIGHTER\'S CARDIO PLAN\n' + weeks + ' Weeks | Weight: ' + weight + 'kg\n' + '='.repeat(40) + '\n\nMON — ROADWORK\n5K steady run (conversational pace)\nTarget: under 25 mins\n\nTUE — INTERVALS\n10x 200m sprints (30s rest between)\nOr: 8x hill sprints (walk back recovery)\n\nWED — ACTIVE RECOVERY\n30 min walk or swim\n\nTHU — BOXING CARDIO\n5x 3-min rounds heavy bag (1 min rest)\n3x 3-min rounds shadow boxing\n3x 3-min rounds skipping\n\nFRI — CIRCUIT\n5 rounds:\n- 10 burpees\n- 20 mountain climbers\n- 15 kettlebell swings\n- 10 box jumps\n- 1 min rest\n\nSAT — LONG RUN\n8-10K at steady pace\n\nSUN — REST\n\nTarget resting heart rate: under 60bpm by fight week.',
+    'budget_meals': 'BUDGET FIGHTER MEALS — UNDER £30/WEEK\nWeight: ' + weight + 'kg | Target: ~' + Math.round(weight * 33) + ' kcal/day\n' + '='.repeat(40) + '\n\nBREAKFAST (every day): £0.60\n80g oats + banana + peanut butter + water\nP:15g C:65g F:12g = 420 kcal\n\nLUNCH (meal prep): £1.80\n200g chicken thigh + 150g rice + frozen veg\nP:40g C:55g F:12g = 490 kcal\n\nSNACK: £0.70\n3 boiled eggs + rice cake\nP:20g C:10g F:15g = 255 kcal\n\nDINNER: £1.50\nTinned tuna pasta (100g pasta + tuna + passata + frozen veg)\nP:35g C:60g F:8g = 455 kcal\n\nEVENING: £0.40\nGreek yoghurt + honey\nP:15g C:20g F:5g = 185 kcal\n\nDAILY TOTAL: ~1,805 kcal | P:125g C:210g F:52g\nDAILY COST: ~£5.00 | WEEKLY: ~£28\n\nSCALE UP: Add extra rice/oats/eggs to hit your calorie target.\n\nSHOPPING LIST:\n- Oats 1kg (£1.50)\n- Bananas x7 (£1)\n- Peanut butter (£2)\n- Chicken thighs 2kg (£6)\n- Rice 2kg (£2)\n- Frozen veg 2kg (£2)\n- Eggs 15 pack (£2.50)\n- Rice cakes (£1)\n- Tinned tuna x5 (£4)\n- Pasta 1kg (£1)\n- Passata x2 (£1.50)\n- Greek yoghurt 1kg (£2.50)\n- Honey (£1.50)\nTOTAL: ~£28.50'
+  };
+  el.textContent = plans[type] || plans['fight_camp'];
+  el.classList.add('show');
+}
+
+// ══════════════════════════════════════════════════
+// 2. MEAL PLAN GENERATOR
+// ══════════════════════════════════════════════════
+function generateMeal() {
+  var goal = document.getElementById('m-goal').value;
+  var weight = parseInt(document.getElementById('m-weight').value) || 75;
+  var cals = document.getElementById('m-cals').value;
+  var budget = document.getElementById('m-budget').value;
+  var diet = document.getElementById('m-diet').value;
+  var meals = parseInt(document.getElementById('m-meals').value);
+
+  var bmr = weight * 24;
+  var tdee = Math.round(bmr * 1.7); // fighters are very active
+  var targetCals = cals ? parseInt(cals) : (goal === 'fat_loss' || goal === 'fight_weight') ? tdee - 400 : goal === 'lean_muscle' ? tdee + 200 : goal === 'bulk' ? tdee + 400 : tdee;
+  var protein = Math.round(weight * 2.2);
+  var fat = Math.round(targetCals * 0.25 / 9);
+  var carbs = Math.round((targetCals - protein * 4 - fat * 9) / 4);
+
+  var title = goal.replace(/_/g, ' ').toUpperCase() + ' MEAL PLAN';
+  var macros = 'Calories: ' + targetCals + ' kcal | Protein: ' + protein + 'g | Carbs: ' + carbs + 'g | Fat: ' + fat + 'g';
+
+  var mealSets = {
+    'no_restriction': [
+      'MEAL 1 — Breakfast\n80g oats + banana + 1 tbsp peanut butter + scoop whey protein\nP:30g | C:55g | F:14g | ~460 kcal | Cost: ~£0.80',
+      'MEAL 2 — Lunch\n200g chicken thigh + 200g rice + mixed salad + olive oil\nP:42g | C:55g | F:14g | ~510 kcal | Cost: ~£2.00',
+      'MEAL 3 — Snack\n3 boiled eggs + 2 rice cakes + apple\nP:20g | C:25g | F:15g | ~310 kcal | Cost: ~£0.70',
+      'MEAL 4 — Dinner\n150g salmon/tuna + sweet potato (200g) + steamed broccoli\nP:38g | C:42g | F:12g | ~425 kcal | Cost: ~£2.50',
+      'MEAL 5 — Evening\nGreek yoghurt (200g) + honey + handful almonds\nP:18g | C:22g | F:12g | ~265 kcal | Cost: ~£0.80'
+    ],
+    'high_protein': [
+      'MEAL 1 — Breakfast\n4 eggs scrambled + 2 slices wholemeal toast + avocado\nP:32g | C:30g | F:24g | ~460 kcal | Cost: ~£1.00',
+      'MEAL 2 — Lunch\n250g chicken breast + 150g rice + green beans\nP:55g | C:45g | F:8g | ~475 kcal | Cost: ~£2.50',
+      'MEAL 3 — Snack\nProtein shake + banana + peanut butter\nP:35g | C:35g | F:10g | ~370 kcal | Cost: ~£0.90',
+      'MEAL 4 — Dinner\n200g lean beef mince + pasta (150g) + passata + veg\nP:48g | C:55g | F:16g | ~555 kcal | Cost: ~£2.50',
+      'MEAL 5 — Evening\nCottage cheese (200g) + rice cakes\nP:24g | C:15g | F:5g | ~200 kcal | Cost: ~£0.60'
+    ],
+    'halal': [
+      'MEAL 1 — Breakfast\nOvernight oats: 80g oats + protein powder + honey + milk\nP:28g | C:58g | F:10g | ~435 kcal | Cost: ~£0.70',
+      'MEAL 2 — Lunch\n200g halal chicken + rice (200g) + hummus + salad\nP:42g | C:58g | F:14g | ~525 kcal | Cost: ~£2.20',
+      'MEAL 3 — Snack\nDates (4) + almonds (30g) + Greek yoghurt\nP:12g | C:35g | F:14g | ~310 kcal | Cost: ~£0.80',
+      'MEAL 4 — Dinner\nHalal lamb mince (150g) + sweet potato + steamed veg\nP:35g | C:40g | F:18g | ~460 kcal | Cost: ~£2.80',
+      'MEAL 5 — Evening\nProtein shake + banana\nP:28g | C:30g | F:3g | ~260 kcal | Cost: ~£0.60'
+    ],
+    'vegetarian': [
+      'MEAL 1 — Breakfast\nOvernight oats + protein powder + chia seeds + berries\nP:30g | C:50g | F:12g | ~430 kcal | Cost: ~£0.80',
+      'MEAL 2 — Lunch\nHalloumi (100g) + quinoa (150g) + chickpeas + roasted veg\nP:30g | C:48g | F:18g | ~470 kcal | Cost: ~£2.00',
+      'MEAL 3 — Snack\nCottage cheese (200g) + rice cakes + honey\nP:24g | C:22g | F:5g | ~230 kcal | Cost: ~£0.70',
+      'MEAL 4 — Dinner\nLentil dhal (200g lentils) + rice (150g) + naan\nP:25g | C:65g | F:10g | ~450 kcal | Cost: ~£1.50',
+      'MEAL 5 — Evening\nProtein shake + mixed nuts (30g)\nP:28g | C:8g | F:15g | ~280 kcal | Cost: ~£0.80'
+    ],
+    'vegan': [
+      'MEAL 1 — Breakfast\nTofu scramble (200g) + wholemeal toast + avocado\nP:22g | C:30g | F:18g | ~370 kcal | Cost: ~£1.00',
+      'MEAL 2 — Lunch\nChickpea curry + rice (200g) + spinach\nP:20g | C:60g | F:12g | ~430 kcal | Cost: ~£1.50',
+      'MEAL 3 — Snack\nVegan protein shake + banana + peanut butter\nP:30g | C:35g | F:10g | ~350 kcal | Cost: ~£1.00',
+      'MEAL 4 — Dinner\nBlack bean chilli + sweet potato + mixed veg\nP:22g | C:55g | F:8g | ~385 kcal | Cost: ~£1.50',
+      'MEAL 5 — Evening\nEdamame (150g) + rice cakes\nP:18g | C:15g | F:8g | ~200 kcal | Cost: ~£0.80'
+    ]
+  };
+
+  var selected = mealSets[diet] || mealSets['no_restriction'];
+  var planText = selected.slice(0, meals).join('\n\n');
+  var budgetNote = budget === 'tight' ? '\n\nBUDGET TIP: Swap salmon for tinned tuna, buy chicken thighs not breast, frozen veg is just as nutritious. Weekly cost: ~£25-28.' : '';
+  var notes = '\n\nFIGHTER NUTRITION NOTES:\n- Drink 3-4L water daily (more during camp)\n- Protein within 30 mins of training\n- Carbs are fuel — don\'t cut them during camp\n- Meal prep Sunday: cook chicken + rice in bulk\n- Weigh yourself daily, adjust portions based on trend' + budgetNote;
+
+  var el = document.getElementById('m-output');
+  el.textContent = title + '\nWeight: ' + weight + 'kg | ' + macros + '\n' + '='.repeat(50) + '\n\n' + planText + notes;
+  el.classList.add('show');
+}
+
+// ══════════════════════════════════════════════════
+// 3. CALORIE COUNTER & FINDER
+// ══════════════════════════════════════════════════
+var foodDB = [
+  {name:'Chicken Breast (100g)',cal:165,p:31,c:0,f:3.6},
+  {name:'Chicken Thigh (100g)',cal:209,p:26,c:0,f:11},
+  {name:'Rice, White (200g cooked)',cal:260,p:5,c:56,f:0.5},
+  {name:'Rice, Brown (200g cooked)',cal:248,p:5.5,c:52,f:2},
+  {name:'Oats (80g dry)',cal:300,p:10,c:52,f:6},
+  {name:'Banana',cal:105,p:1.3,c:27,f:0.4},
+  {name:'Apple',cal:95,p:0.5,c:25,f:0.3},
+  {name:'Egg (1 large)',cal:72,p:6,c:0.4,f:5},
+  {name:'Eggs (3)',cal:216,p:18,c:1.2,f:15},
+  {name:'Greek Yoghurt (200g)',cal:130,p:20,c:8,f:0.7},
+  {name:'Peanut Butter (1 tbsp)',cal:94,p:4,c:3,f:8},
+  {name:'Salmon (150g)',cal:312,p:34,c:0,f:18},
+  {name:'Tinned Tuna (1 tin)',cal:116,p:26,c:0,f:1},
+  {name:'Sweet Potato (200g)',cal:172,p:3.2,c:40,f:0.2},
+  {name:'Broccoli (100g)',cal:34,p:2.8,c:7,f:0.4},
+  {name:'Pasta (150g cooked)',cal:220,p:8,c:43,f:1.3},
+  {name:'Wholemeal Toast (2 slices)',cal:180,p:8,c:30,f:2.4},
+  {name:'Avocado (half)',cal:120,p:1.5,c:6,f:11},
+  {name:'Protein Shake (1 scoop + water)',cal:120,p:25,c:3,f:1.5},
+  {name:'Almonds (30g)',cal:173,p:6,c:6,f:15},
+  {name:'Milk, Semi-Skimmed (250ml)',cal:125,p:8.5,c:12,f:4.5},
+  {name:'Honey (1 tbsp)',cal:64,p:0,c:17,f:0},
+  {name:'Beef Mince, Lean (200g)',cal:332,p:42,c:0,f:18},
+  {name:'Lamb Mince (150g)',cal:375,p:30,c:0,f:28},
+  {name:'Halloumi (100g)',cal:321,p:21,c:3,f:25},
+  {name:'Chickpeas (150g cooked)',cal:245,p:13,c:41,f:4},
+  {name:'Lentils (200g cooked)',cal:230,p:18,c:40,f:0.8},
+  {name:'Cottage Cheese (200g)',cal:196,p:24,c:6,f:8},
+  {name:'Rice Cakes (2)',cal:70,p:1.5,c:15,f:0.5},
+  {name:'Mixed Frozen Veg (150g)',cal:65,p:3,c:12,f:0.5},
+  {name:'Passata (100ml)',cal:24,p:1,c:4,f:0.1},
+  {name:'Olive Oil (1 tbsp)',cal:119,p:0,c:0,f:14},
+  {name:'Sports Drink (500ml)',cal:125,p:0,c:32,f:0},
+  {name:'Whey Protein Bar',cal:200,p:20,c:22,f:6},
+  {name:'Porridge with Milk',cal:280,p:12,c:42,f:7}
+];
+
+var calLog = [];
+
+function searchFood() {
+  var q = document.getElementById('cal-search').value.toLowerCase().trim();
+  if (!q) return;
+  var results = foodDB.filter(function(f) { return f.name.toLowerCase().includes(q); });
+  var html = '';
+  if (results.length === 0) {
+    html = '<div style="color:var(--muted);font-size:.85em;padding:8px">No results found. Try: chicken, rice, eggs, banana, oats...</div>';
+  } else {
+    results.forEach(function(f, i) {
+      html += '<div style="display:flex;justify-content:space-between;align-items:center;padding:8px;border-bottom:1px solid var(--border);font-size:.85em">';
+      html += '<div><strong>' + f.name + '</strong><br><span style="color:var(--muted)">' + f.cal + ' kcal | P:' + f.p + 'g C:' + f.c + 'g F:' + f.f + 'g</span></div>';
+      html += '<button onclick="addToLog(' + foodDB.indexOf(f) + ')" style="background:var(--accent);color:#fff;border:none;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:.8em">+ Add</button>';
+      html += '</div>';
+    });
+  }
+  document.getElementById('cal-results').innerHTML = html;
+}
+
+function addToLog(idx) {
+  var f = foodDB[idx];
+  calLog.push({...f});
+  renderCalLog();
+}
+
+function renderCalLog() {
+  if (calLog.length === 0) {
+    document.getElementById('cal-log').innerHTML = '<div style="text-align:center;color:var(--muted);padding:40px;font-size:.9em">No foods logged yet.</div>';
+    document.getElementById('cal-total').style.display = 'none';
+    return;
+  }
+  var html = '';
+  var totCal = 0, totP = 0, totC = 0, totF = 0;
+  calLog.forEach(function(f, i) {
+    html += '<div class="cal-row"><div>' + f.name + '<br><span style="color:var(--muted);font-size:.8em">' + f.cal + ' kcal</span></div><button class="remove-btn" onclick="removeFromLog(' + i + ')">✕</button></div>';
+    totCal += f.cal; totP += f.p; totC += f.c; totF += f.f;
+  });
+  document.getElementById('cal-log').innerHTML = html;
+  document.getElementById('cal-total').style.display = 'block';
+  document.getElementById('cal-total-num').textContent = totCal + ' kcal';
+  document.getElementById('cal-total-p').textContent = Math.round(totP) + 'g';
+  document.getElementById('cal-total-c').textContent = Math.round(totC) + 'g';
+  document.getElementById('cal-total-f').textContent = Math.round(totF) + 'g';
+}
+
+function removeFromLog(i) { calLog.splice(i, 1); renderCalLog(); }
+function clearCalLog() { calLog = []; renderCalLog(); }
+function generateShoppingFromLog() {
+  var items = [...new Set(calLog.map(f => f.name))];
+  if (items.length === 0) return;
+  switchTool('shopping');
+  document.querySelectorAll('.tool-btn').forEach(b => { b.classList.remove('active'); if (b.textContent === 'Shopping List') b.classList.add('active'); });
+  var html = '<div class="shop-category">From Your Calorie Log</div>';
+  items.forEach(function(item) { html += '<div class="shop-item"><input type="checkbox" onchange="this.parentElement.classList.toggle(\'checked\')"><span>' + item + '</span></div>'; });
+  document.getElementById('shop-list').innerHTML = html;
+}
+
+// ══════════════════════════════════════════════════
+// 4. SHOPPING LIST
+// ══════════════════════════════════════════════════
+var shoppingLists = {
+  'budget_fight': {
+    'Protein': ['Chicken thighs 2kg','Eggs (30 pack)','Tinned tuna x6','Greek yoghurt 1kg'],
+    'Carbs': ['Oats 1kg','Rice 2kg','Pasta 1kg','Sweet potatoes x6','Bananas x7','Wholemeal bread'],
+    'Veg & Fruit': ['Frozen mixed veg 2kg','Broccoli x2','Apples x6','Passata x3'],
+    'Fats & Extras': ['Peanut butter','Olive oil','Honey','Rice cakes'],
+    'Estimated Cost': ['TOTAL: ~£28-32/week']
+  },
+  'lean_muscle': {
+    'Protein': ['Chicken breast 2kg','Salmon fillets x4','Eggs (15 pack)','Whey protein 1kg','Cottage cheese x2','Greek yoghurt 1kg'],
+    'Carbs': ['Oats 1kg','Brown rice 2kg','Sweet potatoes x8','Bananas x7','Wholemeal bread','Rice cakes'],
+    'Veg & Fruit': ['Broccoli x3','Spinach 400g','Mixed salad bags x3','Avocados x4','Berries 300g','Frozen veg 1kg'],
+    'Fats & Extras': ['Almonds 200g','Peanut butter','Olive oil','Honey'],
+    'Estimated Cost': ['TOTAL: ~£45-55/week']
+  },
+  'weight_cut': {
+    'Protein': ['Chicken breast 1.5kg','White fish fillets x4','Eggs (15 pack)','Greek yoghurt 500g'],
+    'Carbs (reduced)': ['Oats 500g','Rice 500g','Sweet potatoes x3','Rice cakes'],
+    'Veg (high volume, low cal)': ['Broccoli x4','Spinach 500g','Cucumber x3','Celery','Lettuce x2','Courgettes x3','Green beans 500g'],
+    'Extras': ['Electrolyte tablets','Green tea','Lemon x4','Ginger','Low-sodium seasoning'],
+    'Estimated Cost': ['TOTAL: ~£30-35/week']
+  }
+};
+
+function generateShopping() {
+  var source = document.getElementById('shop-source').value;
+  var list = shoppingLists[source];
+  if (!list) { document.getElementById('shop-list').innerHTML = '<div style="color:var(--muted);padding:20px;text-align:center">Generate a meal plan first, then select "Custom" to build from it.</div>'; return; }
+  var html = '';
+  Object.keys(list).forEach(function(cat) {
+    html += '<div class="shop-category">' + cat + '</div>';
+    list[cat].forEach(function(item) {
+      html += '<div class="shop-item"><input type="checkbox" onchange="this.parentElement.classList.toggle(\'checked\')"><span>' + item + '</span></div>';
+    });
+  });
+  document.getElementById('shop-list').innerHTML = html;
+}
+
+function addShopItem() {
+  var input = document.getElementById('shop-add-input');
+  var val = input.value.trim();
+  if (!val) return;
+  var list = document.getElementById('shop-list');
+  if (list.querySelector('.shop-item') === null) list.innerHTML = '';
+  var div = document.createElement('div');
+  div.className = 'shop-item';
+  div.innerHTML = '<input type="checkbox" onchange="this.parentElement.classList.toggle(\'checked\')"><span>' + val + '</span>';
+  list.appendChild(div);
+  input.value = '';
+}
+
+function clearShopList() { document.getElementById('shop-list').innerHTML = '<div style="text-align:center;color:var(--muted);padding:40px;font-size:.9em">List cleared.</div>'; }
+
+function copyShopList() {
+  var items = document.querySelectorAll('#shop-list .shop-item span');
+  var text = Array.from(items).map(s => '- ' + s.textContent).join('\n');
+  navigator.clipboard.writeText(text || 'No items').then(() => alert('Shopping list copied!'));
+}
+
+function printShopList() { window.print(); }
+
+// ══════════════════════════════════════════════════
+// 5. MENU PLAN
+// ══════════════════════════════════════════════════
+function generateMenu() {
+  var goal = document.getElementById('menu-goal').value;
+  var budget = document.getElementById('menu-budget').value;
+  var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  var menus = {
+    'fight_prep': [
+      {b:'Oats + banana + peanut butter',l:'Chicken thigh + rice + veg',s:'3 boiled eggs + rice cakes',d:'Tuna pasta + passata + frozen veg',e:'Greek yoghurt + honey'},
+      {b:'4 scrambled eggs + toast',l:'Chicken + sweet potato + broccoli',s:'Protein shake + banana',d:'Lean beef mince + rice + green beans',e:'Cottage cheese + rice cakes'},
+      {b:'Overnight oats + protein powder + berries',l:'Tuna + rice + salad',s:'Apple + peanut butter',d:'Chicken stir-fry + noodles',e:'Greek yoghurt + almonds'},
+      {b:'Oats + banana + honey',l:'Chicken thigh + pasta + passata',s:'3 boiled eggs',d:'Salmon + sweet potato + broccoli',e:'Protein shake'},
+      {b:'4 eggs + toast + avocado',l:'Chicken + rice + frozen veg',s:'Rice cakes + peanut butter',d:'Tuna + pasta + mixed veg',e:'Greek yoghurt + honey'},
+      {b:'Pancakes (oats + egg + banana)',l:'Chicken burger (homemade) + sweet potato wedges',s:'Protein bar',d:'Lean mince chilli + rice',e:'Cottage cheese'},
+      {b:'Full English (eggs, toast, beans, tomatoes)',l:'Roast chicken + potatoes + veg',s:'Fruit + nuts',d:'Light soup + bread',e:'Early night — rest day'}
+    ],
+    'training': [
+      {b:'Oats + protein + banana + peanut butter',l:'Double chicken + rice + veg',s:'Protein shake + banana',d:'Salmon + sweet potato + greens',e:'Greek yoghurt + almonds + honey'},
+      {b:'5 eggs scrambled + toast + avocado',l:'Chicken thigh + pasta + passata + cheese',s:'Rice cakes + peanut butter + banana',d:'Beef stir-fry + rice + veg',e:'Cottage cheese + berries'},
+      {b:'Overnight oats + protein + chia + berries',l:'Tuna + rice + salad + olive oil',s:'3 eggs + toast',d:'Chicken curry + rice',e:'Protein shake + banana'},
+      {b:'Oats + banana + honey + milk',l:'Chicken + sweet potato + broccoli + cheese',s:'Protein bar + apple',d:'Fish + chips (oven baked) + peas',e:'Greek yoghurt + almonds'},
+      {b:'4 eggs + toast + beans',l:'Double chicken + rice + mixed veg',s:'Shake + peanut butter + banana',d:'Pasta bolognese (lean mince)',e:'Cottage cheese + honey'},
+      {b:'Pancakes + protein + berries',l:'Chicken wrap + salad + hummus',s:'Nuts + fruit',d:'Steak + sweet potato + greens',e:'Yoghurt + granola'},
+      {b:'Big breakfast (eggs, bacon, toast, tomatoes)',l:'Roast dinner (chicken, potatoes, veg, gravy)',s:'Rest',d:'Light — soup + bread',e:'Early night'}
+    ],
+    'recovery': [
+      {b:'Oats + banana + honey (gentle)',l:'Chicken soup + bread',s:'Greek yoghurt + berries',d:'Salmon + mashed potato + steamed veg',e:'Warm milk + honey'},
+      {b:'Scrambled eggs + toast (light)',l:'Tuna sandwich + salad',s:'Banana + peanut butter',d:'Chicken + rice + broccoli',e:'Cottage cheese'},
+      {b:'Overnight oats + berries',l:'Lentil soup + bread',s:'Protein shake',d:'Fish + sweet potato + greens',e:'Greek yoghurt + almonds'},
+      {b:'Porridge + honey + banana',l:'Chicken wrap + hummus',s:'Boiled eggs + rice cakes',d:'Pasta + tuna + veg',e:'Warm milk'},
+      {b:'Eggs + toast + avocado',l:'Chicken + rice + salad',s:'Fruit + nuts',d:'Homemade burger + sweet potato wedges',e:'Yoghurt + honey'},
+      {b:'Pancakes + berries',l:'Chicken + pasta + cheese sauce',s:'Protein bar',d:'Fish fingers + mash + peas',e:'Early night'},
+      {b:'Full English (light)',l:'Roast dinner',s:'Rest + hydrate',d:'Soup + bread',e:'Sleep early — big week ahead'}
+    ]
+  };
+
+  var menu = menus[goal] || menus['fight_prep'];
+  var html = '';
+  days.forEach(function(day, i) {
+    var m = menu[i];
+    html += '<div class="menu-day"><h4>' + day + '</h4>';
+    html += '<div class="menu-meal"><strong>Breakfast:</strong> ' + m.b + '</div>';
+    html += '<div class="menu-meal"><strong>Lunch:</strong> ' + m.l + '</div>';
+    html += '<div class="menu-meal"><strong>Snack:</strong> ' + m.s + '</div>';
+    html += '<div class="menu-meal"><strong>Dinner:</strong> ' + m.d + '</div>';
+    html += '<div class="menu-meal"><strong>Evening:</strong> ' + m.e + '</div>';
+    html += '</div>';
+  });
+  document.getElementById('menu-output').innerHTML = html;
+}
+
+// ══════════════════════════════════════════════════
+// 6. MOOD TRACKER
+// ══════════════════════════════════════════════════
+var moodLog = JSON.parse(localStorage.getItem('jw_mood_log') || '[]');
+var selectedMood = '';
+
+function selectMood(el, mood) {
+  document.querySelectorAll('.mood-btn').forEach(b => b.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedMood = mood;
+}
+
+function logMood() {
+  if (!selectedMood) { alert('Select a mood first'); return; }
+  var entry = {
+    date: new Date().toLocaleDateString('en-GB') + ' ' + new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}),
+    mood: selectedMood,
+    energy: document.getElementById('energy-slider').value,
+    readiness: document.getElementById('ready-slider').value,
+    sleep: document.getElementById('sleep-slider').value,
+    stress: document.getElementById('stress-slider').value,
+    notes: document.getElementById('mood-notes').value
+  };
+  moodLog.unshift(entry);
+  localStorage.setItem('jw_mood_log', JSON.stringify(moodLog));
+  renderMoodHistory();
+  document.getElementById('mood-notes').value = '';
+  document.querySelectorAll('.mood-btn').forEach(b => b.classList.remove('selected'));
+  selectedMood = '';
+}
+
+function renderMoodHistory() {
+  if (moodLog.length === 0) {
+    document.getElementById('mood-history').innerHTML = '<div style="text-align:center;color:var(--muted);padding:40px;font-size:.9em">No entries yet.</div>';
+    return;
+  }
+  var emojis = {fired_up:'🔥',strong:'💪',steady:'😤',tired:'😴',struggling:'😞'};
+  var html = '';
+  moodLog.forEach(function(e) {
+    html += '<div class="mood-entry"><div>' + (emojis[e.mood]||'') + ' <strong>' + e.mood.replace('_',' ') + '</strong>';
+    html += '<br><span style="color:var(--muted);font-size:.78em">Energy:' + e.energy + ' Ready:' + e.readiness + ' Sleep:' + e.sleep + ' Stress:' + e.stress + '</span>';
+    if (e.notes) html += '<br><span style="color:var(--muted);font-size:.78em;font-style:italic">' + e.notes + '</span>';
+    html += '</div><div class="date">' + e.date + '</div></div>';
+  });
+  document.getElementById('mood-history').innerHTML = html;
+}
+renderMoodHistory();
+
+function clearMoodHistory() { moodLog = []; localStorage.removeItem('jw_mood_log'); renderMoodHistory(); }
+
+// ══════════════════════════════════════════════════
+// 7. TRAINING PLAN GENERATOR
+// ══════════════════════════════════════════════════
+function generateTraining() {
+  var goal = document.getElementById('t-goal').value;
+  var level = document.getElementById('t-level').value;
+  var days = parseInt(document.getElementById('t-days').value);
+  var equip = document.getElementById('t-equip').value;
+  var injuries = document.getElementById('t-injuries').value || 'None';
+
+  var plans = {
+    'fight_camp': 'FIGHT CAMP PROGRAMME — ' + days + ' DAYS/WEEK\n' + level.toUpperCase() + ' | ' + equip.replace(/_/g,' ') + '\n' + '='.repeat(45) + '\n\nDAY 1 — BOXING + STRENGTH\nAM: Roadwork 5K (steady pace)\nPM:\n- Shadow boxing: 3x3 min\n- Heavy bag: 5x3 min (1 min rest)\n- Pad work: 4x3 min\n- Strength: Deadlift 4x5, Pull-ups 4x8, Core circuit\n\nDAY 2 — SPARRING + CONDITIONING\nAM: Hill sprints 8x (walk back recovery)\nPM:\n- Technical sparring: 6x3 min\n- Body sparring: 2x3 min\n- Conditioning circuit: 4 rounds (burpees, KB swings, box jumps, battle ropes)\n\nDAY 3 — ACTIVE RECOVERY\n- 30 min swim or walk\n- Full body stretch (20 mins)\n- Foam rolling\n- Ice bath if available\n\nDAY 4 — BOXING TECHNICAL\nAM: Intervals — 10x 200m sprints\nPM:\n- Shadow boxing with focus mitts: 4x3 min\n- Double-end bag: 4x3 min\n- Defensive drills: 3x3 min\n- Speed bag: 3x3 min\n- Core: Hanging leg raises, Russian twists, plank (3 rounds)\n\nDAY 5 — STRENGTH + POWER\n- Power cleans: 5x3\n- Bench press: 4x6\n- Medicine ball rotational throws: 4x8/side\n- Farmer\'s walks: 4x40m\n- Landmine press: 3x10\n- Sled push: 4x20m\n\nDAY 6 — LONG RUN + LIGHT WORK\n- 8-10K run (steady)\n- Light bag work: 3x3 min\n- Stretching: 15 mins\n\nDAY 7 — COMPLETE REST',
+    'power': 'KNOCKOUT POWER PROGRAMME — ' + days + ' DAYS/WEEK\n' + '='.repeat(45) + '\n\nDAY 1 — LOWER BODY EXPLOSIVE\nBack Squat: 5x5 (heavy)\nBox Jumps: 4x5\nPower Cleans: 5x3\nSled Push: 4x20m\nCalf Raises: 3x15\n\nDAY 2 — UPPER BODY POWER\nBench Press: 5x5 (heavy)\nMedicine Ball Chest Pass: 4x8\nWeighted Pull-ups: 4x6\nLandmine Press: 3x10/side\nMedicine Ball Slams: 4x10\n\nDAY 3 — BOXING POWER\nHeavy bag — power shots only: 6x2 min\nPad work — combination power: 5x2 min\nShadow boxing with 1kg weights: 3x3 min\nResistance band punches: 3x20\nClap push-ups: 4x8\n\nDAY 4 — ROTATIONAL POWER\nMedicine Ball Rotational Throws: 5x8/side\nCable Woodchops: 3x12/side\nRussian Twists (weighted): 3x20\nBattle Ropes: 4x30s\nFarmer\'s Walks: 4x40m\n\nDAY 5 — FULL BODY EXPLOSIVE\nHang Cleans: 4x3\nJump Squats: 4x6\nPush Press: 4x5\nBall Slams: 4x10\nSprints: 6x 50m',
+    'cardio': 'FIGHTER\'S CARDIO & ENDURANCE — ' + days + ' DAYS/WEEK\n' + '='.repeat(45) + '\n\nDAY 1 — STEADY STATE\n5K run at conversational pace\nTarget: sub-25 mins\n\nDAY 2 — INTERVALS\n10x 200m sprints (30s rest)\nOr: 8x hill sprints\n\nDAY 3 — BOXING CARDIO\n5x 3-min rounds heavy bag (1 min rest)\n3x 3-min rounds shadow boxing\n3x 3-min rounds skipping\n\nDAY 4 — CIRCUIT\n5 rounds:\n- 10 burpees\n- 20 mountain climbers\n- 15 KB swings\n- 10 box jumps\n- 1 min rest\n\nDAY 5 — LONG RUN\n8-10K steady pace\n\nDAY 6 — ACTIVE RECOVERY\n30 min swim or bike\nStretching 15 mins',
+    'strength': 'STRENGTH & CONDITIONING — ' + days + ' DAYS/WEEK\n' + '='.repeat(45) + '\n\nDAY 1 — SQUAT DAY\nBack Squat: 5x5\nFront Squat: 3x5\nLeg Press: 3x10\nRomanian DL: 3x8\nCalf Raises: 4x15\n\nDAY 2 — BENCH DAY\nBench Press: 5x5\nIncline DB Press: 3x8\nDips: 3x10\nTricep Pushdowns: 3x12\nFace Pulls: 3x15\n\nDAY 3 — DEADLIFT DAY\nDeadlift: 5x3\nBarbell Row: 4x8\nWeighted Pull-ups: 4x6\nBicep Curls: 3x10\nCore Circuit: 3 rounds\n\nDAY 4 — OVERHEAD DAY\nOHP: 5x5\nPush Press: 3x5\nLateral Raises: 4x15\nArnold Press: 3x10\nShrugs: 3x12',
+    'general': 'GENERAL FITNESS — ' + days + ' DAYS/WEEK\n' + '='.repeat(45) + '\n\nDAY 1 — UPPER BODY\nBench Press: 4x8\nBarbell Row: 4x8\nOHP: 3x10\nLateral Raises: 3x15\nTricep/Bicep superset: 3x12\n\nDAY 2 — LOWER BODY\nSquat: 4x8\nRDL: 3x10\nLeg Press: 3x12\nLunges: 3x10/leg\nCalf Raises: 4x15\n\nDAY 3 — CARDIO\n30 min run or bike\nCore circuit: 3 rounds\nStretching: 10 mins\n\nDAY 4 — FULL BODY\nDeadlift: 4x5\nDB Bench: 3x10\nPull-ups: 3xAMRAP\nKB Swings: 3x15\nPlank: 3x45s'
+  };
+
+  var plan = plans[goal] || plans['fight_camp'];
+  if (injuries.toLowerCase() !== 'none' && injuries !== '') {
+    plan += '\n\n⚠ INJURY NOTE (' + injuries + '):\nModify exercises that stress this area. Consult a physio for specific alternatives.\nFor injury-aware programming, the Elite Corner includes direct coaching from Josh.';
+  }
+  if (equip === 'home' || equip === 'minimal') {
+    plan += '\n\nHOME/MINIMAL EQUIPMENT NOTE:\nReplace barbell exercises with bodyweight or dumbbell equivalents.\nHeavy bag work can be replaced with shadow boxing.\nSprints and bodyweight circuits are your best friend.';
+  }
+
+  var el = document.getElementById('t-output');
+  el.textContent = plan;
+  el.classList.add('show');
+}
+
+// ══════════════════════════════════════════════════
+// 8. RECOVERY PROTOCOL
+// ══════════════════════════════════════════════════
+function generateRecovery() {
+  var issue = document.getElementById('r-issue').value;
+  var duration = document.getElementById('r-duration').value;
+  var freq = document.getElementById('r-freq').value;
+
+  var protocols = {
+    'post_fight': 'POST-FIGHT RECOVERY PROTOCOL\n' + '='.repeat(40) + '\n\nFIRST 24 HOURS:\n- Ice any swelling (15 on, 15 off)\n- Rehydrate: electrolytes + water (3-4L)\n- Eat: protein + carbs + anti-inflammatory foods\n- Sleep as much as possible\n- NO alcohol\n\n48-72 HOURS:\n- Light walking only\n- Epsom salt bath\n- Monitor for concussion symptoms (headache, dizziness, nausea)\n- Gentle stretching only\n\n1 WEEK POST-FIGHT:\n- Light cardio (swimming, cycling)\n- NO sparring for minimum 2 weeks\n- No heavy bag for 1 week\n- Sports massage\n\n2+ WEEKS:\n- Gradually return to training\n- First sparring: light/technical only\n- Listen to your body\n\n⚠ If you took significant head shots, see a doctor before returning to sparring.',
+    'soreness': 'RECOVERY PROTOCOL — MUSCLE SORENESS (DOMS)\n' + '='.repeat(40) + '\n\nIMMEDIATE:\n- Light walking (20 mins)\n- Foam rolling affected areas (5 mins per group)\n- Warm bath with Epsom salts\n\nNUTRITION:\n- Increase protein to 2.5g/kg for 48 hours\n- Tart cherry juice (reduces inflammation)\n- Omega-3 (fish oil)\n\nTRAINING:\n- Don\'t skip training — light movement helps\n- Reduce weight by 30%\n- Full range of motion\n\nPREVENTION:\n- Proper warm-up (10 mins)\n- Gradual volume increases (max 10%/week)\n- Sleep 8+ hours',
+    'hand_injury': 'RECOVERY PROTOCOL — HAND / WRIST PAIN\n' + '='.repeat(40) + '\n\n⚠ Hands are your career. Do NOT ignore this.\n\nIMMEDIATE:\n- Ice (15 on, 15 off) after every session\n- Anti-inflammatory (ibuprofen short-term)\n- REST from bag and pad work\n\nIF SWELLING/BRUISING:\n- See a doctor — could be a fracture\n- X-ray if pain persists beyond 5 days\n- Do NOT wrap tighter to mask pain\n\nPREVENTION:\n- Wrap hands properly EVERY time\n- Use quality gloves (minimum 14oz for bag, 16oz for sparring)\n- Strengthen wrists: wrist curls, rice bucket exercises\n- Don\'t punch the bag with bad technique\n\nWHILE RECOVERING:\n- Footwork drills (no punching)\n- Defensive movement\n- Cardio: running, cycling, skipping\n- Lower body strength work\n\nRETURN TO PUNCHING:\n- Start with shadow boxing (no contact)\n- Then double-end bag (light)\n- Then pads (controlled)\n- Heavy bag last',
+    'fatigue': 'RECOVERY PROTOCOL — OVERTRAINING / CHRONIC FATIGUE\n' + '='.repeat(40) + '\n\n⚠ YOUR BODY IS TELLING YOU TO BACK OFF.\n\nTHIS WEEK:\n- Deload: 50% volume, RPE 6-7\n- Add 1 extra rest day\n- No sparring\n\nNUTRITION:\n- You\'re probably under-eating\n- Increase calories by 300-500 for 2 weeks\n- Protein: 2.2g/kg minimum\n- Do NOT cut carbs when overtrained\n\nLIFESTYLE:\n- Sleep 9 hours minimum\n- Reduce stress where possible\n- Light walking on rest days only\n\nAFTER 2 WEEKS:\n- Gradually return to normal\n- If fatigue persists: see a doctor (thyroid/iron)\n- Consider reducing from ' + freq + ' to ' + (parseInt(freq) - 1) + ' days/week',
+    'sleep': 'RECOVERY PROTOCOL — SLEEP OPTIMISATION\n' + '='.repeat(40) + '\n\nEVENING ROUTINE:\n- No caffeine after 2pm\n- No screens 60 mins before bed\n- Room: 18-20°C, dark, quiet\n- Magnesium glycinate: 400mg\n- Read or stretch\n\nTRAINING:\n- No intense training after 7pm\n- Morning sessions preferred\n- 10 min stretching after every session\n\nSUPPLEMENTS:\n- Magnesium glycinate: 400mg\n- Zinc: 15-30mg\n- Ashwagandha: 300-600mg (reduces cortisol)\n\nFIGHT WEEK INSOMNIA:\n- Normal — anxiety affects sleep\n- Box breathing: 4-4-4-4\n- Visualise the fight going well\n- Even lying still helps recovery',
+    'motivation': 'RECOVERY PROTOCOL — MENTAL BURNOUT\n' + '='.repeat(40) + '\n\nTHIS IS NORMAL. Every fighter hits this wall.\n\nIMMEDIATE:\n- Take 3-5 days completely off\n- Do something physical you enjoy (not boxing)\n- Walk, swim, play football, anything fun\n\nWHEN YOU RETURN:\n- Change your routine completely\n- New drills, new combinations, new sparring partners\n- Train with someone who pushes you\n- Set one small goal\n\nMINDSET:\n- Progress isn\'t linear — dips are normal\n- Compare to 6 months ago, not last week\n- Discipline beats motivation every time\n- Remember why you started\n\nIF PERSISTENT:\n- Talk to someone — coach, friend, professional\n- Mental health is as important as physical\n- There\'s no shame in taking a break\n- A rested fighter is a dangerous fighter',
+    'weight_cut_recovery': 'RECOVERY PROTOCOL — POST WEIGHT CUT\n' + '='.repeat(40) + '\n\nIMMEDIATELY AFTER WEIGH-IN:\n- Sip electrolyte drink (not plain water)\n- Small meal: rice + banana + honey\n- Do NOT binge — stomach has shrunk\n\nNEXT 2-4 HOURS:\n- Small meals every hour\n- Easily digestible carbs: rice, pasta, bread\n- Moderate protein: chicken, eggs\n- Avoid heavy/fatty foods\n- Continue sipping electrolytes\n\nPRE-FIGHT (3-4 hours before):\n- Light meal: chicken + rice or pasta\n- Banana + honey 1 hour before\n- Sip water throughout\n\nPOST-FIGHT:\n- Eat whatever you want (you earned it)\n- Rehydrate aggressively\n- Sleep\n\nNEXT WEEK:\n- Return to normal eating gradually\n- Monitor weight — some rebound is normal\n- Reflect: was the cut too aggressive?\n- Plan better for next time'
+  };
+
+  var plan = protocols[issue] || protocols['soreness'];
+  if (duration === 'months') {
+    plan += '\n\n⚠ DURATION WARNING: This has been going on for over a month. See a medical professional. Chronic issues need professional assessment, not just rest.';
+  }
+
+  var el = document.getElementById('r-output');
+  el.textContent = plan;
+  el.classList.add('show');
+}
+</script>
+
+</body>
+</html>
