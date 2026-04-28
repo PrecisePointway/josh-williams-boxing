@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://joshwilliamsboxing.com/sitemap.xml
+Sitemap: https://precisepointway.github.io/josh-williams-boxing/sitemap.xml

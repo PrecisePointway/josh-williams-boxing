@@ -1,0 +1,20 @@
+# Internal / agent tooling — never deploy
+CLAUDE.md
+AGENTS.md
+.claude/
+.mcp.json
+
+# Internal docs / reports — keep out of public root
+PHOTO_MAP.md
+IMAGE_MAP.md
+MANIFEST.sha256
+DEPLOYMENT_REPORT.md
+KJ_FEATURE_MAP.md
+
+# Secrets
+.env
+.env.*
+
+# Output / scratch
+/tmp/
+*.log

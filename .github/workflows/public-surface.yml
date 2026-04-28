@@ -1,0 +1,12 @@
+name: public-surface
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/check_public_surface.sh
