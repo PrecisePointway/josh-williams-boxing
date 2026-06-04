@@ -1,3 +1,8 @@
+> **Governed dependant (client/project website).**
+> Source-of-truth for governance, operating doctrine, evidence, and risk is the canonical repo:
+> **[`Blade2AI/codex-sovereign`](https://github.com/Blade2AI/codex-sovereign)** (`ai-operating-system-v2/`).
+> This project follows that doctrine; governance decisions are **not** made here.
+
 # Josh Williams 'Hammer Hands' Boxing
 
 Professional boxing and fitness website deployment repository for Josh Williams. Built with a premium Combat Crimson & Obsidian design palette.
