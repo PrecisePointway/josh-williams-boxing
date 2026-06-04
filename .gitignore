@@ -1,19 +1,27 @@
-# Internal / agent tooling — never deploy
+# Internal/operational artefacts — never publish
+DEPLOYMENT_REPORT.md
+DEPLOYMENT_*.md
+*_REPORT.md
+*_MAP.md
+MANIFEST.sha256
+MANIFEST.*
+
+# CSS internal harness surfaces
+.claude/
 CLAUDE.md
 AGENTS.md
-.claude/
 .mcp.json
 
-# Internal docs / reports — keep out of public root
-PHOTO_MAP.md
-IMAGE_MAP.md
-MANIFEST.sha256
-DEPLOYMENT_REPORT.md
-KJ_FEATURE_MAP.md
-
-# Secrets
+# Secrets + env
 .env
 .env.*
+*.pem
+*.key
+
+# Build artefacts
+node_modules/
+dist/
+.cache/
 
 # Output / scratch
 /tmp/
